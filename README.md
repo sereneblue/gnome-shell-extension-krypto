@@ -9,6 +9,7 @@ Tested on Ubuntu & gnome-shell 3.18.5.
 # Installation
 
 `git clone https://github.com/sereneblue/gnome-shell-extension-krypto.git`
+
 `cd gnome-shell-extension-krypto`
 
 Edit these variables in `extensions.js`. Add desired cryptocurrencies to the CRYPTO array.
