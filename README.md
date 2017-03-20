@@ -20,7 +20,7 @@ Edit these variables in `extensions.js`. Add desired cryptocurrencies to the CRY
 
 `mv krypto@sereneblue ~/.local/share/gnome-shell/extensions/krypto@sereneblue`
 
-Then press `Alt` + `F2`, type `r` and hit enter to restart gnome-shell.
+Then press `Alt` + `F2`, type `r` and hit enter to restart gnome-shell. If that doesn't work, open the Tweak Tool -> Extensions and manually enable it.
 
 # Credits
 
