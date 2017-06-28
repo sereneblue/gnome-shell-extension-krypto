@@ -10,11 +10,10 @@ wget --header='Accept-Encoding:none' -O /tmp/krypto_extension.zip "${URL}"
 #Make directory and extract archive to it
 mkdir -p "${EXTENSION_PATH}/${EXTENSION_UUID}";
 unzip -q /tmp/krypto_extension.zip -d ${EXTENSION_PATH}/${EXTENSION_UUID};
-mv ${EXTENSION_PATH}/${EXTENSION_UUID}/krypto@sereneblue/* ${EXTENSION_PATH}/${EXTENSION_UUID};
+mv ${EXTENSION_PATH}/${EXTENSION_UUID}/gnome-shell-extension-krypto-master/krypto@sereneblue/* ${EXTENSION_PATH}/${EXTENSION_UUID};
 
-# Remove images from repo and empty directory
-rm ${EXTENSION_PATH}/${EXTENSION_UUID}/*.png;
-rmdir ${EXTENSION_PATH}/${EXTENSION_UUID}/krypto@sereneblue;
+# Remove repo directory and extra files
+rm -r ignore-fail-on-non-empty ${EXTENSION_PATH}/${EXTENSION_UUID}/gnome-shell-extension-krypto-master;
 
 # List enabled extensions
 EXTENSION_LIST=$(gsettings get org.gnome.shell enabled-extensions | sed 's/^.\(.*\).$/\1/');
