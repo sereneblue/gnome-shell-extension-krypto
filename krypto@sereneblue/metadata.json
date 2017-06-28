@@ -1,1 +1,7 @@
-{"name": "krypto", "description": "Cryptocurrency ticker", "uuid": "krypto@sereneblue", "shell-version": ["3.18.5"]}
+{
+	"name": "krypto",
+	"description": "Cryptocurrency utility",
+	"url": "https://github.com/sereneblue/gnome-shell-extension-krypto",
+	"uuid": "krypto@sereneblue",
+	"shell-version": ["3.18.5"]
+}

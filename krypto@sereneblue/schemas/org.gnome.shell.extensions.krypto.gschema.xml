@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+   <schema id="org.gnome.shell.extensions.krypto" path="/org/gnome/shell/extensions/krypto/">
+      <key name="krypto-prefs-fiat-index" type="i">
+         <default>13</default>
+         <summary>Base fiat currency index</summary>
+         <description>Fiat currency index to be used with krypto</description>
+      </key>
+      <key name="krypto-prefs-update" type="i">
+         <default>30</default>
+         <summary>Number of seconds to wait in between updates</summary>
+         <description>Number of seconds to wait in between updates when checking cryptocompare</description>
+      </key>
+      <key name="krypto-prefs-distraction" type="i">
+         <default>10</default>
+         <summary>Number of minutes for distraction free time</summary>
+         <description>Number of minutes for a distraction free period</description>
+      </key>
+      <key name="krypto-prefs-num" type="i">
+         <default>2</default>
+         <summary>Number of currencies to display in the Top Bar</summary>
+         <description>Number of currencies to display in the Top Bar</description>
+      </key>
+      <key name="krypto-prefs-btc" type="b">
+         <default>true</default>
+         <summary>Enable Bitcoin</summary>
+         <description>Check the Bitcoin price</description>
+      </key>
+      <key name="krypto-prefs-dash" type="b">
+         <default>false</default>
+         <summary>Enable Dash</summary>
+         <description>Check the Dash price</description>
+      </key>
+      <key name="krypto-prefs-dcr" type="b">
+         <default>false</default>
+         <summary>Enable Decred</summary>
+         <description>Check the Decred price</description>
+      </key>
+      <key name="krypto-prefs-doge" type="b">
+         <default>false</default>
+         <summary>Enable Dogecoin</summary>
+         <description>Check the Dogecoin price</description>
+      </key>
+      <key name="krypto-prefs-eth" type="b">
+         <default>false</default>
+         <summary>Enable Ethereum</summary>
+         <description>Check the Ethereum price</description>
+      </key>
+      <key name="krypto-prefs-etc" type="b">
+         <default>false</default>
+         <summary>Enable Ethereum Classic</summary>
+         <description>Check the Ethereum Classic price</description>
+      </key>
+      <key name="krypto-prefs-ltc" type="b">
+         <default>false</default>
+         <summary>Enable Litecoin</summary>
+         <description>Check the Litecoin price</description>
+      </key>
+      <key name="krypto-prefs-xmr" type="b">
+         <default>true</default>
+         <summary>Enable Monero</summary>
+         <description>Check the Monero price</description>
+      </key>
+      <key name="krypto-prefs-xrp" type="b">
+         <default>false</default>
+         <summary>Enable Ripple</summary>
+         <description>Check the Ripple price</description>
+      </key>
+   </schema>
+</schemalist>

@@ -2,25 +2,47 @@
 
 ![gnome-shell-extension-krypto](https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/screenshot.png?raw=true)
 
-Simple cryptocurrency ticker for gnome-shell inspired from my previous project [krypto](https://github.com/sereneblue/krypto). Updates every thirty seconds.
+A cryptocurrency utility for gnome-shell.
 
-Tested on Ubuntu & gnome-shell 3.18.5.
+Tested on Ubuntu 16.04 & gnome-shell 3.18.5.
 
 # Installation
 
-`git clone https://github.com/sereneblue/gnome-shell-extension-krypto.git`
+### Using the install script
+`$ wget -O install.sh https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/install.sh`
+`$ chmod +x install.sh`
+`$ ./install.sh`
 
-`cd gnome-shell-extension-krypto`
+### From source code
 
-Edit these variables in `extensions.js`. Add desired cryptocurrencies to the CRYPTO array.
+`$ git clone https://github.com/sereneblue/gnome-shell-extension-krypto.git`
 
-	const CRYPTO = ['BTC'];
-	const SYM = "$";
-	const FIAT  = "USD";
+`$ cd gnome-shell-extension-krypto`
 
-`mv krypto@sereneblue ~/.local/share/gnome-shell/extensions/krypto@sereneblue`
+`$ mv krypto@sereneblue $HOME/.local/share/gnome-shell/extensions/krypto@sereneblue`
 
-Then press `Alt` + `F2`, type `r` and hit enter to restart gnome-shell. If that doesn't work, open the Tweak Tool -> Extensions and manually enable it.
+You'll have to manually enable it via Gnome Tweak Tool.
+
+# Configuration
+
+![krypto configuration](https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/configuration.png?raw=true)
+
+krypto can be configured with the Gnome Tweak Tool.
+
+#### Cryptocurrencies
+There are only 9 supported cryptocurrencies: BTC, DASH, DCR, DOGE, ETH, ETC, LTC, XMR, and XRP. More can be added in the future.
+
+#### Fiat Currencies
+There are currently 14 supported fiat currencies. If you'd like a specific currency added, please submit an issue or feel free to submit a merge request.
+
+#### Distraction Free Mode Time
+It's probably not healthy to have cryptocurrency prices in front of you 24/7. ;) Distraction Free Mode will prevent krypto from displaying prices for a certain amount of time that your specify in a future update.
+
+#### Number of currencies displayed in the Top Bar
+Limit how many currencies are shown in the top bar. Currencies that aren't displayed in the Top Bar will be displayed in a popup menu in a future update.
+
+#### Update Interval
+Change how frequently you'd like the price to refresh. Default is 30 seconds.
 
 # Credits
 
