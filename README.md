@@ -10,7 +10,9 @@ Tested on Ubuntu 16.04 & gnome-shell 3.18.5.
 
 ### Using the install script
 `$ wget -O install.sh https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/install.sh`
+
 `$ chmod +x install.sh`
+
 `$ ./install.sh`
 
 ### From source code
