@@ -46,7 +46,7 @@ Limit how many currencies are shown in the top bar. Currencies that aren't displ
 #### Update Interval
 Change how frequently you'd like the price to refresh. Default is 30 seconds.
 
-### Delimiter
+#### Delimiter
 Change the delimiter that separates the currencies in the top bar.
 
 # Credits
