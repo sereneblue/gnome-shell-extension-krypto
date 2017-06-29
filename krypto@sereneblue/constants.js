@@ -38,7 +38,7 @@ const ENABLED_CRYPTOS = [
 const SYMBOLS = ["A$", "C$", " Fr.", "¥", "€",
 				  "£", "HK$", "₹", "¥",
 				  "Mex$", "NZ$", "₽", "S$", "$"];
-const FIAT_SYMBOLS = ["AUD", "CAD", "CHF", "CNY",
+const FIAT_ABBR = ["AUD", "CAD", "CHF", "CNY",
 					"EUR", "GBP", "HKD", "INR",
 					"JPY", "MXN", "NZD", "RUB",
 					"SGD", "USD"];

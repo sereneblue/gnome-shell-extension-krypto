@@ -37,14 +37,16 @@ There are only 9 supported cryptocurrencies: BTC, DASH, DCR, DOGE, ETH, ETC, LTC
 #### Fiat Currencies
 There are currently 14 supported fiat currencies. If you'd like a specific currency added, please submit an issue or feel free to submit a merge request.
 
+![krypto distraction free mode](https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/distraction_free_mode.png?raw=true)
+
 #### Distraction Free Mode Time
-It's probably not healthy to have cryptocurrency prices in front of you 24/7. ;) Distraction Free Mode will prevent krypto from displaying prices for a certain amount of time that your specify in a future update.
+It's probably not healthy to have cryptocurrency prices in front of you 24/7. Distraction Free Mode will prevent krypto from displaying prices for a certain amount of time that you specify. Default value is 10 minutes. Prices will continue to be updated in the background and you still have access to the calculator. ;)
 
 #### Number of currencies displayed in the Top Bar
-Limit how many currencies are shown in the top bar. Currencies that aren't displayed in the Top Bar will be displayed in a popup menu in a future update.
+Limit how many currencies are shown in the top bar. Currencies that aren't shown in the Top Bar are displayed in the popup menu.
 
 #### Update Interval
-Change how frequently you'd like the price to refresh. Default is 30 seconds.
+Change how frequently you'd like the prices to refresh. Default value is 30 seconds.
 
 #### Delimiter
 Change the delimiter that separates the currencies in the top bar.
