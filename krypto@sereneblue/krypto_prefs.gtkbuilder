@@ -34,6 +34,7 @@
         <property name="can_focus">False</property>
         <property name="margin_left">10</property>
         <property name="margin_right">10</property>
+        <property name="margin_bottom">5</property>
         <property name="label_xalign">0</property>
         <property name="shadow_type">in</property>
         <child>
@@ -46,6 +47,7 @@
               <object class="GtkGrid" id="grid2">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="margin_bottom">10</property>
                 <property name="column_homogeneous">True</property>
                 <child>
                   <object class="GtkLabel" id="prefs_label_update">
@@ -183,6 +185,38 @@ Display in Top Bar</property>
                   <packing>
                     <property name="left_attach">1</property>
                     <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="prefs_label_delim">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Delimeter</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBoxText" id="prefs_combo_delim">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="has_default">True</property>
+                    <items>
+                      <item id="0" translatable="yes">|</item>
+                      <item id="1" translatable="yes">·</item>
+                      <item id="2" translatable="yes">•</item>
+                      <item id="3" translatable="yes">◈</item>
+                      <item id="4" translatable="yes">✖</item>
+                      <item id="5" translatable="yes">†</item>
+                      <item id="6" translatable="yes">‡</item>
+                      <item id="7" translatable="yes">~</item>
+                    </items>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">4</property>
                   </packing>
                 </child>
               </object>

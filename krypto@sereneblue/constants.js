@@ -3,6 +3,7 @@ const FIAT = "krypto-prefs-fiat-index";
 const UPDATE_SEC = "krypto-prefs-update";
 const DISTRACTION_MIN = "krypto-prefs-distraction";
 const NUM_DISPLAY = "krypto-prefs-num";
+const DELIMITER = "krypto-prefs-delim"
 const BTC_ENABLED = "krypto-prefs-btc";
 const DASH_ENABLED = "krypto-prefs-dash";
 const DCR_ENABLED = "krypto-prefs-dcr";
@@ -41,4 +42,6 @@ const FIAT_SYMBOLS = ["AUD", "CAD", "CHF", "CNY",
 					"EUR", "GBP", "HKD", "INR",
 					"JPY", "MXN", "NZD", "RUB",
 					"SGD", "USD"];
+const DELIMS = ["|", "·", "•", "◈",
+				"✖", "†", "‡", "~"]
 

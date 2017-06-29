@@ -36,6 +36,10 @@ const krypto = new Lang.Class({
     return this._settings.get_int(Settings.UPDATE_SEC);
   },
 
+  _getDelim: function () {
+    return Settings.DELIMS[this._settings.get_int(Settings.DELIMITER)];
+  },
+
   _getFiatSymbol: function () {
     return Settings.FIAT_SYMBOLS[this._settings.get_int(Settings.FIAT)];
   },
@@ -69,7 +73,7 @@ const krypto = new Lang.Class({
     var keys = Object.keys(data);
     for (var i = 0; i < keys.length; i++){
       if (i < this._settings.get_int(Settings.NUM_DISPLAY)) {
-        txt_label += (keys[i] + " " + this._getSymbol() + data[keys[i]][this._getFiatSymbol()].toString() + " | ");
+        txt_label += (keys[i] + " " + this._getSymbol() + data[keys[i]][this._getFiatSymbol()].toString() + " " + this._getDelim() + " ");
       } else {
         // put the rest of the currencies in popup menu TODO
       }

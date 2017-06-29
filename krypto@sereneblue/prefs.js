@@ -51,6 +51,7 @@ const krypto_widget = new GObject.Class({
         	this.pack_start(main_container, true, true, 0);
 
 	        let prefs_combo_fiat = builder.get_object("prefs_combo_fiat");
+	        let prefs_combo_delim = builder.get_object("prefs_combo_delim");
 	        let prefs_spin_update = builder.get_object("prefs_spin_update");
 	        let prefs_spin_distraction = builder.get_object("prefs_spin_distraction");
 	        let prefs_spin_num = builder.get_object("prefs_spin_num");
@@ -69,6 +70,7 @@ const krypto_widget = new GObject.Class({
 	        this.settings.bind(Settings.UPDATE_SEC, prefs_spin_update, "value", Gio.SettingsBindFlags.DEFAULT);
 	        this.settings.bind(Settings.DISTRACTION_MIN, prefs_spin_distraction, "value", Gio.SettingsBindFlags.DEFAULT);
 	        this.settings.bind(Settings.NUM_DISPLAY, prefs_spin_num, "value", Gio.SettingsBindFlags.DEFAULT);
+	        this.settings.bind(Settings.DELIMITER, prefs_combo_delim, "active", Gio.SettingsBindFlags.DEFAULT);
 	        this.settings.bind(Settings.BTC_ENABLED, prefs_crypto_btc, "active", Gio.SettingsBindFlags.DEFAULT);
 	        this.settings.bind(Settings.DASH_ENABLED, prefs_crypto_dash, "active", Gio.SettingsBindFlags.DEFAULT);
 	        this.settings.bind(Settings.DCR_ENABLED, prefs_crypto_dcr, "active", Gio.SettingsBindFlags.DEFAULT);
