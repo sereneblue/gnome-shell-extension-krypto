@@ -9,19 +9,18 @@ Tested on Ubuntu 16.04 & gnome-shell 3.18.5.
 # Installation
 
 ### Using the install script
-`$ wget -O install.sh https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/install.sh`
-
-`$ chmod +x install.sh`
-
-`$ ./install.sh`
+```
+$ wget -O install.sh https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/install.sh
+$ chmod +x install.sh
+$ ./install.sh
+```
 
 ### From source code
-
-`$ git clone https://github.com/sereneblue/gnome-shell-extension-krypto.git`
-
-`$ cd gnome-shell-extension-krypto`
-
-`$ mv krypto@sereneblue $HOME/.local/share/gnome-shell/extensions/krypto@sereneblue`
+```
+$ git clone https://github.com/sereneblue/gnome-shell-extension-krypto.git
+$ cd gnome-shell-extension-krypto
+$ mv krypto@sereneblue $HOME/.local/share/gnome-shell/extensions/krypto@sereneblue
+```
 
 You'll have to manually enable it via Gnome Tweak Tool.
 
