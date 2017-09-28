@@ -4,7 +4,7 @@
 
 A cryptocurrency utility for gnome-shell.
 
-Tested on Ubuntu 16.04 & gnome-shell 3.18.5.
+Tested on Ubuntu 16.04 (gnome-shell 3.18.5) and Arch Linux (gnome-shell 3.24.3).
 
 # Installation
 
