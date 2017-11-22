@@ -38,7 +38,7 @@ There are currently 14 supported fiat currencies. If you'd like a specific curre
 
 ![krypto distraction free mode](https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/distraction_free_mode.png?raw=true)
 
-#### Distraction Free Mode Time
+#### Distraction Free Mode
 It's probably not healthy to have cryptocurrency prices in front of you 24/7. Distraction Free Mode will prevent krypto from displaying prices for a certain amount of time that you specify. Default value is 10 minutes. Prices will continue to be updated in the background and you still have access to the calculator. ;)
 
 #### Number of currencies displayed in the Top Bar
