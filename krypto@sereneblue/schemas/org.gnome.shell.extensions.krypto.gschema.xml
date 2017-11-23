@@ -26,10 +26,20 @@
          <summary>Delimiter index</summary>
          <description>Delimiter index to display in the top bar</description>
       </key>
+      <key name="krypto-prefs-rep" type="b">
+         <default>false</default>
+         <summary>Enable Augur</summary>
+         <description>Check the Augur price</description>
+      </key>
       <key name="krypto-prefs-btc" type="b">
          <default>true</default>
          <summary>Enable Bitcoin</summary>
          <description>Check the Bitcoin price</description>
+      </key>
+      <key name="krypto-prefs-bch" type="b">
+         <default>false</default>
+         <summary>Enable Bitcoin Cash</summary>
+         <description>Check the Bitcoin Cash price</description>
       </key>
       <key name="krypto-prefs-dash" type="b">
          <default>false</default>
@@ -56,20 +66,55 @@
          <summary>Enable Ethereum Classic</summary>
          <description>Check the Ethereum Classic price</description>
       </key>
+      <key name="krypto-prefs-iota" type="b">
+         <default>false</default>
+         <summary>Enable IOTA</summary>
+         <description>Check the IOTA price</description>
+      </key>
+      <key name="krypto-prefs-lsk" type="b">
+         <default>false</default>
+         <summary>Enable Lisk</summary>
+         <description>Check the Lisk price</description>
+      </key>
       <key name="krypto-prefs-ltc" type="b">
          <default>false</default>
          <summary>Enable Litecoin</summary>
          <description>Check the Litecoin price</description>
       </key>
       <key name="krypto-prefs-xmr" type="b">
-         <default>true</default>
+         <default>false</default>
          <summary>Enable Monero</summary>
          <description>Check the Monero price</description>
+      </key>
+      <key name="krypto-prefs-xem" type="b">
+         <default>false</default>
+         <summary>Enable NEM</summary>
+         <description>Check the NEM price</description>
+      </key>
+      <key name="krypto-prefs-neo" type="b">
+         <default>false</default>
+         <summary>Enable NEO</summary>
+         <description>Check the NEO price</description>
+      </key>
+      <key name="krypto-prefs-nxt" type="b">
+         <default>false</default>
+         <summary>Enable Nxt</summary>
+         <description>Check the Nxt price</description>
       </key>
       <key name="krypto-prefs-xrp" type="b">
          <default>false</default>
          <summary>Enable Ripple</summary>
          <description>Check the Ripple price</description>
+      </key>
+      <key name="krypto-prefs-strat" type="b">
+         <default>false</default>
+         <summary>Enable Stratis</summary>
+         <description>Check the Stratis price</description>
+      </key>
+      <key name="krypto-prefs-zec" type="b">
+         <default>false</default>
+         <summary>Enable Zcash</summary>
+         <description>Check the Zcash price</description>
       </key>
    </schema>
 </schemalist>
