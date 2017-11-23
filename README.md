@@ -73,7 +73,7 @@ Change the delimiter that separates the currencies in the top bar.
 
 # Update
 
-If you want to update the extension, reinstall the extension following the process above. Your settings will be preserved (excluding any deprecated options).
+If you want to update the extension, reinstall it by following the process above. Your settings will be preserved (excluding any deprecated options).
 
 # Credits
 
