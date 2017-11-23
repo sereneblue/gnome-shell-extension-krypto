@@ -24,7 +24,7 @@ $ mv krypto@sereneblue $HOME/.local/share/gnome-shell/extensions/krypto@serenebl
 
 You'll have to manually enable it via Gnome Tweak Tool.
 
-If you're using Wayland, log back in and out.
+If you're using Wayland, you'll need to logout to see the changes..
 
 # Configuration
 
