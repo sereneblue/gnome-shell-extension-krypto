@@ -31,6 +31,16 @@
          <summary>Enable Augur</summary>
          <description>Check the Augur price</description>
       </key>
+      <key name="krypto-prefs-bat" type="b">
+         <default>false</default>
+         <summary>Enable Basic Attention Token</summary>
+         <description>Check the BAT price</description>
+      </key>
+      <key name="krypto-prefs-bnb" type="b">
+         <default>false</default>
+         <summary>Enable Binance Coin</summary>
+         <description>Check the Binance Coin price</description>
+      </key>
       <key name="krypto-prefs-btc" type="b">
          <default>true</default>
          <summary>Enable Bitcoin</summary>
@@ -40,6 +50,16 @@
          <default>false</default>
          <summary>Enable Bitcoin Cash</summary>
          <description>Check the Bitcoin Cash price</description>
+      </key>
+      <key name="krypto-prefs-ada" type="b">
+         <default>false</default>
+         <summary>Enable Cardano</summary>
+         <description>Check the Cardano price</description>
+      </key>
+      <key name="krypto-prefs-link" type="b">
+         <default>false</default>
+         <summary>Enable Chainlink</summary>
+         <description>Check the Chainlink price</description>
       </key>
       <key name="krypto-prefs-dash" type="b">
          <default>false</default>
@@ -55,6 +75,11 @@
          <default>false</default>
          <summary>Enable Dogecoin</summary>
          <description>Check the Dogecoin price</description>
+      </key>
+      <key name="krypto-prefs-eos" type="b">
+         <default>false</default>
+         <summary>Enable EOS</summary>
+         <description>Check the EOS price</description>
       </key>
       <key name="krypto-prefs-eth" type="b">
          <default>false</default>
@@ -81,10 +106,20 @@
          <summary>Enable Litecoin</summary>
          <description>Check the Litecoin price</description>
       </key>
+      <key name="krypto-prefs-mkr" type="b">
+         <default>false</default>
+         <summary>Enable Maker</summary>
+         <description>Check the Maker price</description>
+      </key>
       <key name="krypto-prefs-xmr" type="b">
          <default>false</default>
          <summary>Enable Monero</summary>
          <description>Check the Monero price</description>
+      </key>
+      <key name="krypto-prefs-nano" type="b">
+         <default>false</default>
+         <summary>Enable Nano</summary>
+         <description>Check the Nano price</description>
       </key>
       <key name="krypto-prefs-xem" type="b">
          <default>false</default>
@@ -110,6 +145,16 @@
          <default>false</default>
          <summary>Enable Stratis</summary>
          <description>Check the Stratis price</description>
+      </key>
+      <key name="krypto-prefs-xtz" type="b">
+         <default>false</default>
+         <summary>Enable Tezos</summary>
+         <description>Check the Tezos price</description>
+      </key>
+      <key name="krypto-prefs-vet" type="b">
+         <default>false</default>
+         <summary>Enable Vechain</summary>
+         <description>Check the Vechain price</description>
       </key>
       <key name="krypto-prefs-zec" type="b">
          <default>false</default>
