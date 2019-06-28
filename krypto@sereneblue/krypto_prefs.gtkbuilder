@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.20.1 -->
+<!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.0"/>
   <object class="GtkAdjustment" id="adjustment1">
@@ -253,34 +253,6 @@ Display in Top Bar</property>
             <property name="margin_left">10</property>
             <property name="margin_right">10</property>
             <child>
-              <object class="GtkCheckButton" id="prefs_crypto_bch">
-                <property name="label" translatable="yes">Bitcoin Cash (BCH)</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="xalign">0</property>
-                <property name="draw_indicator">True</property>
-              </object>
-              <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">2</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkCheckButton" id="prefs_crypto_btc">
-                <property name="label" translatable="yes">Bitcoin (BTC)</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="xalign">0</property>
-                <property name="draw_indicator">True</property>
-              </object>
-              <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">1</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkCheckButton" id="prefs_crypto_rep">
                 <property name="label" translatable="yes">Augur (REP)</property>
                 <property name="visible">True</property>
@@ -295,8 +267,177 @@ Display in Top Bar</property>
               </packing>
             </child>
             <child>
+              <object class="GtkCheckButton" id="prefs_crypto_bch">
+                <property name="label" translatable="yes">Bitcoin Cash (BCH)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_btc">
+                <property name="label" translatable="yes">Bitcoin (BTC)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_dash">
+                <property name="label" translatable="yes">Dash (DASH)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_dcr">
+                <property name="label" translatable="yes">Decred (DCR)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_ltc">
+                <property name="label" translatable="yes">Litecoin (LTC)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_lsk">
+                <property name="label" translatable="yes">Lisk (LSK)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_iota">
+                <property name="label" translatable="yes">IOTA (MIOTA)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_etc">
+                <property name="label" translatable="yes">Ethereum
+Classic (ETC)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_eth">
+                <property name="label" translatable="yes">Ethereum (ETH)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_doge">
+                <property name="label" translatable="yes">Dogecoin (DOGE)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_xmr">
+                <property name="label" translatable="yes">Monero (XMR)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">8</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkCheckButton" id="prefs_crypto_zec">
                 <property name="label" translatable="yes">Zcash (ZEC)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_strat">
+                <property name="label" translatable="yes">Stratis (STRAT)</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
@@ -319,20 +460,6 @@ Display in Top Bar</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
-                <property name="top_attach">3</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkCheckButton" id="prefs_crypto_strat">
-                <property name="label" translatable="yes">Stratis (STRAT)</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="xalign">0</property>
-                <property name="draw_indicator">True</property>
-              </object>
-              <packing>
-                <property name="left_attach">2</property>
                 <property name="top_attach">4</property>
               </packing>
             </child>
@@ -347,7 +474,7 @@ Display in Top Bar</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
-                <property name="top_attach">2</property>
+                <property name="top_attach">3</property>
               </packing>
             </child>
             <child>
@@ -361,7 +488,7 @@ Display in Top Bar</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
-                <property name="top_attach">1</property>
+                <property name="top_attach">2</property>
               </packing>
             </child>
             <child>
@@ -375,12 +502,12 @@ Display in Top Bar</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
-                <property name="top_attach">0</property>
+                <property name="top_attach">1</property>
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="prefs_crypto_xmr">
-                <property name="label" translatable="yes">Monero (XMR)</property>
+              <object class="GtkCheckButton" id="prefs_crypto_bat">
+                <property name="label" translatable="yes">Basic Attention Token (BAT)</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
@@ -388,13 +515,13 @@ Display in Top Bar</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">5</property>
+                <property name="left_attach">0</property>
+                <property name="top_attach">1</property>
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="prefs_crypto_ltc">
-                <property name="label" translatable="yes">Litecoin (LTC)</property>
+              <object class="GtkCheckButton" id="prefs_crypto_bnb">
+                <property name="label" translatable="yes">Binance Coin (BNB)</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
@@ -402,42 +529,41 @@ Display in Top Bar</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">4</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkCheckButton" id="prefs_crypto_lsk">
-                <property name="label" translatable="yes">Lisk (LSK)</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="xalign">0</property>
-                <property name="draw_indicator">True</property>
-              </object>
-              <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">3</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkCheckButton" id="prefs_crypto_iota">
-                <property name="label" translatable="yes">IOTA (MIOTA)</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="xalign">0</property>
-                <property name="draw_indicator">True</property>
-              </object>
-              <packing>
-                <property name="left_attach">1</property>
+                <property name="left_attach">0</property>
                 <property name="top_attach">2</property>
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="prefs_crypto_etc">
-                <property name="label" translatable="yes">Ethereum
-Classic (ETC)</property>
+              <object class="GtkCheckButton" id="prefs_crypto_ada">
+                <property name="label" translatable="yes">Cardano (ADA)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_link">
+                <property name="label" translatable="yes">Chainlink (LINK)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_eos">
+                <property name="label" translatable="yes">EOS (EOS)</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
@@ -450,8 +576,8 @@ Classic (ETC)</property>
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="prefs_crypto_eth">
-                <property name="label" translatable="yes">Ethereum (ETH)</property>
+              <object class="GtkCheckButton" id="prefs_crypto_mkr">
+                <property name="label" translatable="yes">Maker (MKR)</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
@@ -460,12 +586,26 @@ Classic (ETC)</property>
               </object>
               <packing>
                 <property name="left_attach">1</property>
+                <property name="top_attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="prefs_crypto_nano">
+                <property name="label" translatable="yes">Nano (NANO)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
                 <property name="top_attach">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="prefs_crypto_doge">
-                <property name="label" translatable="yes">Dogecoin (DOGE)</property>
+              <object class="GtkCheckButton" id="prefs_crypto_xtz">
+                <property name="label" translatable="yes">Tezos (XTZ)</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
@@ -473,13 +613,13 @@ Classic (ETC)</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">5</property>
+                <property name="left_attach">2</property>
+                <property name="top_attach">6</property>
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="prefs_crypto_dcr">
-                <property name="label" translatable="yes">Decred (DCR)</property>
+              <object class="GtkCheckButton" id="prefs_crypto_vet">
+                <property name="label" translatable="yes">Vechain (VET)</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
@@ -487,22 +627,8 @@ Classic (ETC)</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">4</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkCheckButton" id="prefs_crypto_dash">
-                <property name="label" translatable="yes">Dash (DASH)</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">False</property>
-                <property name="xalign">0</property>
-                <property name="draw_indicator">True</property>
-              </object>
-              <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">3</property>
+                <property name="left_attach">2</property>
+                <property name="top_attach">7</property>
               </packing>
             </child>
           </object>
