@@ -11,6 +11,10 @@ A cryptocurrency utility for gnome-shell.
 
 # Installation
 
+### From extensions.gnome.org
+
+Visit [extensions.gnome.org](https://extensions.gnome.org/extension/1913/krypto/) and click on the switch to install krypto. 
+
 ### Using the install script
 ```
 $ wget -O install.sh https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/install.sh
