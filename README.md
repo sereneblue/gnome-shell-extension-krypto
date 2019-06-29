@@ -1,10 +1,13 @@
 # krypto
 
-![gnome-shell-extension-krypto](https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/screenshot.png?raw=true)
+![krypto version](https://img.shields.io/badge/version-2-brightgreen.svg)
+![GPL v3 License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)
+
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/14242625/60378536-d3238800-99f1-11e9-8a3f-0fdd0d46bd9a.png">
+</p>
 
 A cryptocurrency utility for gnome-shell.
-
-Tested on Ubuntu 16.04 (gnome-shell 3.18.5) and Arch Linux (gnome-shell 3.26.2).
 
 # Installation
 
@@ -24,34 +27,44 @@ $ mv krypto@sereneblue $HOME/.local/share/gnome-shell/extensions/krypto@serenebl
 
 You'll have to manually enable it via Gnome Tweak Tool.
 
-If you're using Wayland, you'll need to logout to see the changes..
+If you're using Wayland, you'll need to logout to see the changes.
 
 # Configuration
 
-![krypto configuration](https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/configuration.png?raw=true)
+![krypto configuration](https://user-images.githubusercontent.com/14242625/60378329-09abd380-99ef-11e9-806b-298774194e2c.png)
 
-krypto can be configured with the Gnome Tweak Tool.
+krypto can be configured from Gnome Tweak Tool.
 
 #### Cryptocurrencies
-There are 18 supported cryptocurrencies:
+
+There are 27 supported cryptocurrencies:
 
 	Augur
-	Bitcoin Cash
+	Basic Attention Token
+	Binance Coin
 	Bitcoin
+	Bitcoin Cash
+	Cardano
+	Chainlink
 	Dash
 	Decred
 	Dogecoin
+	EOS
 	Ethereum
 	Ethereum Classic
 	IOTA
 	Lisk
 	Litecoin
+	Maker
 	Monero
+	Nano
 	NEM
 	NEO
 	Nxt
 	Ripple
 	Stratis
+	Tezos
+	Vechain
 	Zcash
 
 #### Fiat Currencies
@@ -60,20 +73,20 @@ There are currently 14 supported fiat currencies. If you'd like a specific curre
 #### Distraction Free Mode
 It's probably not healthy to have cryptocurrency prices in front of you 24/7. Distraction Free Mode will prevent krypto from displaying prices for a certain amount of time that you specify. Default value is 10 minutes. Prices will continue to be updated in the background and you still have access to the calculator. ;)
 
-![krypto distraction free mode](https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/distraction_free_mode.png?raw=true)
+![krypto distraction free mode](https://user-images.githubusercontent.com/14242625/60378529-bab36d80-99f1-11e9-99e1-1d6adfeaeeb3.png)
 
-#### Number of currencies displayed in the Top Bar
+#### Configure number of currencies displayed in the Top Bar
 Limit how many currencies are shown in the top bar. Currencies that aren't shown in the Top Bar are displayed in the popup menu.
 
 #### Update Interval
-Change how frequently you'd like the prices to refresh. Default value is 30 seconds.
+Change how frequently you'd like the prices to refresh. Minimum value is 30 seconds.
 
 #### Delimiter
 Change the delimiter that separates the currencies in the top bar.
 
 # Update
 
-If you want to update the extension, reinstall it by following the process above. Your settings will be preserved (excluding any deprecated options).
+If you want to update the extension, install it by following the process above. Your settings will be preserved (excluding any deprecated options). You may need to restart your session for changes to appear.
 
 # Credits
 
