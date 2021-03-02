@@ -89,10 +89,10 @@ const ENABLED_CRYPTOS = [
 	XTZ_ENABLED,
 	ZEC_ENABLED
 ];
-const SYMBOLS = ["A$", "C$", " Fr.", "¥", "€",
+const SYMBOLS = ["A$", "R$", "C$", " Fr.", "¥", "€",
 				"£", "HK$", "₹", "¥",
 				"Mex$", "NZ$", "₽", "S$", "$"];
-const FIAT_ABBR = ["AUD", "CAD", "CHF", "CNY",
+const FIAT_ABBR = ["AUD", "BRL", "CAD", "CHF", "CNY",
 				   "EUR", "GBP", "HKD", "INR",
 				   "JPY", "MXN", "NZD", "RUB",
 				   "SGD", "USD"];
