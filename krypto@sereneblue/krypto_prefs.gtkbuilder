@@ -167,19 +167,20 @@ Display in Top Bar</property>
                     <property name="has_default">True</property>
                     <items>
                       <item id="0" translatable="yes">AUD</item>
-                      <item id="1" translatable="yes">CAD</item>
-                      <item id="2" translatable="yes">CHF</item>
-                      <item id="3" translatable="yes">CNY</item>
-                      <item id="4" translatable="yes">EUR</item>
-                      <item id="5" translatable="yes">GBP</item>
-                      <item id="6" translatable="yes">HKD</item>
-                      <item id="7" translatable="yes">INR</item>
-                      <item id="8" translatable="yes">JPY</item>
-                      <item id="9" translatable="yes">MXN</item>
-                      <item id="10" translatable="yes">NZD</item>
-                      <item id="11" translatable="yes">RUB</item>
-                      <item id="12" translatable="yes">SGD</item>
-                      <item id="13" translatable="yes">USD</item>
+                      <item id="1" translatable="yes">BRL</item>
+                      <item id="2" translatable="yes">CAD</item>
+                      <item id="3" translatable="yes">CHF</item>
+                      <item id="4" translatable="yes">CNY</item>
+                      <item id="5" translatable="yes">EUR</item>
+                      <item id="6" translatable="yes">GBP</item>
+                      <item id="7" translatable="yes">HKD</item>
+                      <item id="8" translatable="yes">INR</item>
+                      <item id="9" translatable="yes">JPY</item>
+                      <item id="10" translatable="yes">MXN</item>
+                      <item id="11" translatable="yes">NZD</item>
+                      <item id="12" translatable="yes">RUB</item>
+                      <item id="13" translatable="yes">SGD</item>
+                      <item id="14" translatable="yes">USD</item>
                     </items>
                   </object>
                   <packing>
