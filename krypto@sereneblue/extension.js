@@ -142,6 +142,9 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
                     let json = JSON.parse(message.response_body.data);
                     this._refreshUI(json);
                 }));
+            } else {
+                this._txt_label = "";
+                this._setLabelText();
             }
         }
 
