@@ -163,14 +163,14 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
                     this._currency_data[keys[i]] = price;
 
                     if (i < this._settings.get_int(Settings.PREF_NUM_DISPLAY)) {
-                      txt_label += (keys[i] + " " + this._getSymbol() + price.toString() + " " + this._getDelim() + " ");
+                      txt_label += `${i > 0 ? this._getDelim() + ' ' : '' }${keys[i]} ${this._getSymbol()}${price}`;
                     } else {
-                      let txt = keys[i] + " " + this._getSymbol() + data[keys[i]][this._getFiatAAbbr()].toString();
+                      let txt = `${keys[i]} ${this._getSymbol()}${data[keys[i]][this._getFiatAAbbr()]}`;
                       this._prices_menu.menu.addMenuItem(new PopupMenu.PopupMenuItem(txt, {reactive: false}));
                     }
                 }
 
-                this._txt_label = txt_label.substring(0, txt_label.length - 2);
+                this._txt_label = txt_label;
                 this._setLabelText();
             }
         }
