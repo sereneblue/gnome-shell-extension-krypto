@@ -24,7 +24,7 @@ EXTENSION_ENABLED=$(echo ${EXTENSION_LIST} | grep ${EXTENSION_UUID});
 if [ "$EXTENSION_ENABLED" = "" ]; then
 	gsettings set org.gnome.shell enabled-extensions "[${EXTENSION_LIST},'${EXTENSION_UUID}']"
 	# Extension is now available
-	echo "krypto has been enabled. Restart your desktop to take effect (Alt+F2 then 'r')."
+	echo "krypto has been enabled. Restart your desktop to take effect (XOrg: Alt+F2 then 'r'. Wayland: Logout/login)."
 fi
 
 # remove temporary files
