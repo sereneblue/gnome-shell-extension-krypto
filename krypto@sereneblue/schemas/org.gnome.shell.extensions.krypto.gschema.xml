@@ -22,7 +22,7 @@
          <description>Number of currencies to display in the Top Bar</description>
       </key>
       <key name="krypto-prefs-delim" type="i">
-         <default>7</default>
+         <default>4</default>
          <summary>Delimiter index</summary>
          <description>Delimiter index to display in the top bar</description>
       </key>
