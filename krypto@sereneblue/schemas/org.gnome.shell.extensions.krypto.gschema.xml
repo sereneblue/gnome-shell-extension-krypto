@@ -26,6 +26,14 @@
          <summary>Delimiter index</summary>
          <description>Delimiter index to display in the top bar</description>
       </key>
+      <key name="krypto-prefs-zrx" type="b">
+         <default>false</default>
+         <summary>Enable Ox</summary>
+      </key>
+      <key name="krypto-prefs-aave" type="b">
+         <default>false</default>
+         <summary>Enable Aave</summary>
+      </key>
       <key name="krypto-prefs-rep" type="b">
          <default>false</default>
          <summary>Enable Augur</summary>
@@ -46,6 +54,10 @@
          <default>false</default>
          <summary>Enable Bitcoin Cash</summary>
       </key>
+      <key name="krypto-prefs-btt" type="b">
+         <default>false</default>
+         <summary>Enable BitTorrent</summary>
+      </key>
       <key name="krypto-prefs-ada" type="b">
          <default>false</default>
          <summary>Enable Cardano</summary>
@@ -53,6 +65,14 @@
       <key name="krypto-prefs-link" type="b">
          <default>false</default>
          <summary>Enable Chainlink</summary>
+      </key>
+      <key name="krypto-prefs-atom" type="b">
+         <default>false</default>
+         <summary>Enable Cosmos</summary>
+      </key>
+      <key name="krypto-prefs-cro" type="b">
+         <default>false</default>
+         <summary>Enable Crypto.com Coin</summary>
       </key>
       <key name="krypto-prefs-dash" type="b">
          <default>false</default>
@@ -78,9 +98,21 @@
          <default>false</default>
          <summary>Enable Ethereum Classic</summary>
       </key>
+      <key name="krypto-prefs-fil" type="b">
+         <default>false</default>
+         <summary>Enable Filecoin</summary>
+      </key>
+      <key name="krypto-prefs-ftx" type="b">
+         <default>false</default>
+         <summary>Enable FTX Token</summary>
+      </key>
       <key name="krypto-prefs-iota" type="b">
          <default>false</default>
          <summary>Enable IOTA</summary>
+      </key>
+      <key name="krypto-prefs-klay" type="b">
+         <default>false</default>
+         <summary>Enable Klaytn</summary>
       </key>
       <key name="krypto-prefs-lsk" type="b">
          <default>false</default>
@@ -114,21 +146,61 @@
          <default>false</default>
          <summary>Enable Nxt</summary>
       </key>
+      <key name="krypto-prefs-cake" type="b">
+         <default>false</default>
+         <summary>Enable PancakeSwap</summary>
+      </key>
+      <key name="krypto-prefs-dot" type="b">
+         <default>false</default>
+         <summary>Enable Polkadot</summary>
+      </key>
       <key name="krypto-prefs-xrp" type="b">
          <default>false</default>
          <summary>Enable Ripple</summary>
+      </key>
+      <key name="krypto-prefs-sol" type="b">
+         <default>false</default>
+         <summary>Enable Solana</summary>
+      </key>
+      <key name="krypto-prefs-xlm" type="b">
+         <default>false</default>
+         <summary>Enable Stellar</summary>
       </key>
       <key name="krypto-prefs-strat" type="b">
          <default>false</default>
          <summary>Enable Stratis</summary>
       </key>
+      <key name="krypto-prefs-sushi" type="b">
+         <default>false</default>
+         <summary>Enable SushiSwap</summary>
+      </key>
+      <key name="krypto-prefs-luna" type="b">
+         <default>false</default>
+         <summary>Enable Terra</summary>
+      </key>
       <key name="krypto-prefs-xtz" type="b">
          <default>false</default>
          <summary>Enable Tezos</summary>
       </key>
+      <key name="krypto-prefs-theta" type="b">
+         <default>false</default>
+         <summary>Enable THETA</summary>
+      </key>
+      <key name="krypto-prefs-trx" type="b">
+         <default>false</default>
+         <summary>Enable TRON</summary>
+      </key>
+      <key name="krypto-prefs-uni" type="b">
+         <default>false</default>
+         <summary>Enable Uniswap</summary>
+      </key>
       <key name="krypto-prefs-vet" type="b">
          <default>false</default>
          <summary>Enable Vechain</summary>
+      </key>
+      <key name="krypto-prefs-yfi" type="b">
+         <default>false</default>
+         <summary>Enable yearn.finance</summary>
       </key>
       <key name="krypto-prefs-zec" type="b">
          <default>false</default>
