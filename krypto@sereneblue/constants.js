@@ -1,99 +1,56 @@
 // setting keys
-const FIAT = "krypto-prefs-fiat-index";
-const UPDATE_SEC = "krypto-prefs-update";
-const DISTRACTION_MIN = "krypto-prefs-distraction";
-const NUM_DISPLAY = "krypto-prefs-num";
-const DELIMITER = "krypto-prefs-delim"
-const ADA_ENABLED = "krypto-prefs-ada";
-const BAT_ENABLED = "krypto-prefs-bat";
-const BCH_ENABLED = "krypto-prefs-bch";
-const BNB_ENABLED = "krypto-prefs-bnb";
-const BTC_ENABLED = "krypto-prefs-btc";
-const DASH_ENABLED = "krypto-prefs-dash";
-const DCR_ENABLED = "krypto-prefs-dcr";
-const DOGE_ENABLED = "krypto-prefs-doge";
-const EOS_ENABLED = "krypto-prefs-eos";
-const ETH_ENABLED = "krypto-prefs-eth";
-const ETC_ENABLED = "krypto-prefs-etc";
-const IOTA_ENABLED = "krypto-prefs-iota";
-const LINK_ENABLED = "krypto-prefs-link";
-const LSK_ENABLED = "krypto-prefs-lsk";
-const LTC_ENABLED = "krypto-prefs-ltc";
-const MKR_ENABLED = "krypto-prefs-mkr";
-const NANO_ENABLED = "krypto-prefs-nano";
-const NEO_ENABLED = "krypto-prefs-neo";
-const NXT_ENABLED = "krypto-prefs-nxt";
-const REP_ENABLED = "krypto-prefs-rep";
-const STRAT_ENABLED = "krypto-prefs-strat";
-const VET_ENABLED = "krypto-prefs-vet";
-const XEM_ENABLED = "krypto-prefs-xem";
-const XMR_ENABLED = "krypto-prefs-xmr";
-const XRP_ENABLED = "krypto-prefs-xrp";
-const XTZ_ENABLED = "krypto-prefs-xtz";
-const ZEC_ENABLED = "krypto-prefs-zec";
-const CRYPTOS = [
-	"ADA",
-	"BAT",
-	"BCH",
-	"BNB",
-	"BTC",
-	"DASH",
-	"DCR",
-	"DOGE",
-	"EOS",
-	"ETH",
-	"ETC",
-	"IOTA",
-	"LINK",
-	"LSK",
-	"LTC",
-	"MKR",
-	"NANO",
-	"NEO",
-	"NXT",
-	"REP",
-	"STRAT",
-	"VET",
-	"XEM",
-	"XMR",
-	"XRP",
-	"XTZ",
-	"ZEC"
+var PREF_FIAT = "krypto-prefs-fiat-index";
+var PREF_UPDATE_SEC = "krypto-prefs-update";
+var PREF_DISTRACTION_MIN = "krypto-prefs-distraction";
+var PREF_NUM_DISPLAY = "krypto-prefs-num";
+var PREF_DELIMITER = "krypto-prefs-delim";
+
+var DELIMS = ["|", "·", "•", "◈", "~"];
+
+var CRYPTOCURRENCIES = [
+	{ name: "Augur", 					setting: "krypto-prefs-rep", 	symbol: "REP"},
+	{ name: "Basic Attention Token", 	setting: "krypto-prefs-bat", 	symbol: "BAT"},
+	{ name: "Binance Coin", 			setting: "krypto-prefs-bnb", 	symbol: "BNB"},
+	{ name: "Bitcoin", 					setting: "krypto-prefs-btc", 	symbol: "BTC"},
+	{ name: "Bitcoin Cash", 			setting: "krypto-prefs-bch", 	symbol: "BCH"},
+	{ name: "Cardano", 					setting: "krypto-prefs-ada", 	symbol: "ADA"},
+	{ name: "Chainlink", 				setting: "krypto-prefs-link", 	symbol: "LINK"},
+	{ name: "Dash", 					setting: "krypto-prefs-dash", 	symbol: "DASH"},
+	{ name: "Decred", 					setting: "krypto-prefs-dcr", 	symbol: "DCR"},
+	{ name: "Dogecoin", 				setting: "krypto-prefs-doge", 	symbol: "DOGE"},
+	{ name: "EOS", 						setting: "krypto-prefs-eos", 	symbol: "EOS"},
+	{ name: "Ethereum", 				setting: "krypto-prefs-eth", 	symbol: "ETH"},
+	{ name: "Ethereum Classic", 		setting: "krypto-prefs-etc", 	symbol: "ETC"},
+	{ name: "IOTA", 					setting: "krypto-prefs-iota", 	symbol: "MIOTA"},
+	{ name: "Lisk", 					setting: "krypto-prefs-lsk", 	symbol: "LSK"},
+	{ name: "Litecoin", 				setting: "krypto-prefs-ltc", 	symbol: "LTC"},
+	{ name: "Maker", 					setting: "krypto-prefs-mkr", 	symbol: "MKR"},
+	{ name: "Monero", 					setting: "krypto-prefs-xmr", 	symbol: "XMR"},
+	{ name: "Nano", 					setting: "krypto-prefs-nano", 	symbol: "NANO"},
+	{ name: "NEM", 						setting: "krypto-prefs-xem", 	symbol: "XEM"},
+	{ name: "NEO", 						setting: "krypto-prefs-neo", 	symbol: "NEO"},
+	{ name: "Nxt", 						setting: "krypto-prefs-nxt", 	symbol: "NXT"},
+	{ name: "Ripple", 					setting: "krypto-prefs-xrp", 	symbol: "XRP"},
+	{ name: "Stratis", 					setting: "krypto-prefs-strat", 	symbol: "STRAT"},
+	{ name: "Tezos", 					setting: "krypto-prefs-xtz", 	symbol: "XTZ"},
+	{ name: "Vechain", 					setting: "krypto-prefs-vet", 	symbol: "VET"},
+	{ name: "Zcash", 					setting: "krypto-prefs-zec", 	symbol: "ZEC"}
 ];
-const ENABLED_CRYPTOS = [
-	ADA_ENABLED,
-	BAT_ENABLED,
-	BCH_ENABLED,
-	BNB_ENABLED,
-	BTC_ENABLED,
-	DASH_ENABLED,
-	DCR_ENABLED,
-	DOGE_ENABLED,
-	EOS_ENABLED,
-	ETH_ENABLED,
-	ETC_ENABLED,
-	IOTA_ENABLED,
-	LINK_ENABLED,
-	LSK_ENABLED,
-	LTC_ENABLED,
-	MKR_ENABLED,
-	NANO_ENABLED,
-	NEO_ENABLED,
-	NXT_ENABLED,
-	REP_ENABLED,
-	STRAT_ENABLED,
-	VET_ENABLED,
-	XEM_ENABLED,
-	XMR_ENABLED,
-	XRP_ENABLED,
-	XTZ_ENABLED,
-	ZEC_ENABLED
+
+var FIAT = [
+	{ abbr: "AUD", symbol: "A$" },
+	{ abbr: "BRL", symbol: "R$" },
+	{ abbr: "CAD", symbol: "C$" },
+	{ abbr: "CHF", symbol: "Fr." },
+	{ abbr: "CNY", symbol: "¥" },
+	{ abbr: "EUR", symbol: "€" },
+	{ abbr: "GBP", symbol: "£" },
+	{ abbr: "HKD", symbol: "HK$" },
+	{ abbr: "INR", symbol: "₹" },
+	{ abbr: "JPY", symbol: "¥" },
+	{ abbr: "MXN", symbol: "Mex$" },
+	{ abbr: "NZD", symbol: "NZ$" },
+	{ abbr: "RUB", symbol: "₽" },
+	{ abbr: "SGD", symbol: "S$" },
+	{ abbr: "USD", symbol: "$" }
 ];
-const SYMBOLS = ["A$", "R$", "C$", " Fr.", "¥", "€",
-				"£", "HK$", "₹", "¥",
-				"Mex$", "NZ$", "₽", "S$", "$"];
-const FIAT_ABBR = ["AUD", "BRL", "CAD", "CHF", "CNY",
-				   "EUR", "GBP", "HKD", "INR",
-				   "JPY", "MXN", "NZD", "RUB",
-				   "SGD", "USD"];
-const DELIMS = ["|", "·", "•", "◈", "~"];
