@@ -66,9 +66,12 @@ var FIAT = [
 	{ abbr: "HKD", symbol: "HK$" },
 	{ abbr: "INR", symbol: "₹" },
 	{ abbr: "JPY", symbol: "¥" },
+	{ abbr: "KRW", symbol: "₩" },
 	{ abbr: "MXN", symbol: "Mex$" },
 	{ abbr: "NZD", symbol: "NZ$" },
 	{ abbr: "RUB", symbol: "₽" },
+	{ abbr: "SEK", symbol: "kr" },
 	{ abbr: "SGD", symbol: "S$" },
-	{ abbr: "USD", symbol: "$" }
+	{ abbr: "USD", symbol: "$" },
+	{ abbr: "ZAR", symbol: "R"}
 ];

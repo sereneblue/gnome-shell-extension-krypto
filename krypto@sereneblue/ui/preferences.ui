@@ -54,23 +54,6 @@
                 </child>
                 <child>
                   <object class="GtkComboBoxText" id="prefs_combo_fiat">
-                    <items>
-                      <item id="0">AUD</item>
-                      <item id="1">BRL</item>
-                      <item id="2">CAD</item>
-                      <item id="3">CHF</item>
-                      <item id="4">CNY</item>
-                      <item id="5">EUR</item>
-                      <item id="6">GBP</item>
-                      <item id="7">HKD</item>
-                      <item id="8">INR</item>
-                      <item id="9">JPY</item>
-                      <item id="10">MXN</item>
-                      <item id="11">NZD</item>
-                      <item id="12">RUB</item>
-                      <item id="13">SGD</item>
-                      <item id="14">USD</item>
-                    </items>
                     <layout>
                       <property name="column">1</property>
                       <property name="row">0</property>

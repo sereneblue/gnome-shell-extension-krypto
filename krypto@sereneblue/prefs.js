@@ -62,6 +62,10 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
                 let prefs_spin_distraction = builder.get_object("prefs_spin_distraction");
                 let prefs_spin_num = builder.get_object("prefs_spin_num");
 
+                for (let i = 0; i < Settings.FIAT.length; i++) {
+                    prefs_combo_fiat.append(i.toString(), Settings.FIAT[i].abbr);
+                }
+
                 // bind preferences settings
                 this._settings.bind(Settings.PREF_FIAT, prefs_combo_fiat, "active", Gio.SettingsBindFlags.DEFAULT);
                 this._settings.bind(Settings.PREF_UPDATE_SEC, prefs_spin_update, "value", Gio.SettingsBindFlags.DEFAULT);
