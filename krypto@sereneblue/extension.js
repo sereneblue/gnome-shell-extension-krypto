@@ -27,7 +27,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
               text: this._txt_label,
               y_align: Clutter.ActorAlign.CENTER
             });
-            this.actor.add_actor(this.buttonText);
+            this.add_child(this.buttonText);
             this._createMenu();
             this._refresh();
         }
