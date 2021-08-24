@@ -2,7 +2,6 @@ const Main = imports.ui.main;
 const GObject = imports.gi.GObject;
 const Soup = imports.gi.Soup;
 const St = imports.gi.St;
-const Lang = imports.lang;
 const Mainloop = imports.mainloop;
 const Clutter = imports.gi.Clutter;
 const PanelMenu = imports.ui.panelMenu;
@@ -77,8 +76,8 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
                 styleClass: 'calculator-input'
             });
 
-            this._distraction_mode_switch.connect('activate', Lang.bind(this, this._enableDistractionFreeMode));
-            this._calculator_input.clutter_text.connect('key-release-event', Lang.bind(this, this._calculatePrice));
+            this._distraction_mode_switch.connect('activate', this._enableDistractionFreeMode.bind(this));
+            this._calculator_input.clutter_text.connect('key-release-event', this._calculatePrice.bind(this));
 
             // add the st widgets to menu items
             // price calculator separator
@@ -103,7 +102,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             this._setLabelText();
         }
         _enableDistractionFreeMode() {
-            this._distraction_timeout = Mainloop.timeout_add_seconds(this._getDistractionTime(), Lang.bind(this, this._disableDistractionFreeMode));
+            this._distraction_timeout = Mainloop.timeout_add_seconds(this._getDistractionTime(), this._disableDistractionFreeMode.bind(this));
             // disable changing distraction free mode ;)
             this._distraction_mode_switch.actor.reactive = false;
             this._setLabelText();
@@ -126,7 +125,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
         _refresh() {
             this._loadData(this._refreshUI);
             this._removeTimeout();
-            this._timeout = Mainloop.timeout_add_seconds(this._getUpdateSec(), Lang.bind(this, this._refresh));
+            this._timeout = Mainloop.timeout_add_seconds(this._getUpdateSec(), this._refresh.bind(this));
             return true;
         }
         _loadData() {
@@ -137,11 +136,11 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
                 let message = Soup.Message.new('GET', url);
                 
                 _httpSession = new Soup.SessionAsync();
-                _httpSession.queue_message(message, Lang.bind(this, function (_httpSession, message) {
+                _httpSession.queue_message(message, (_httpSession, message) => {
                     if (message.status_code !== 200) return;
                     let json = JSON.parse(message.response_body.data);
                     this._refreshUI(json);
-                }));
+                });
             } else {
                 this._txt_label = "";
                 this._setLabelText();

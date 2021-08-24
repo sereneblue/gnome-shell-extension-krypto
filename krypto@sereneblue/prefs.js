@@ -2,7 +2,6 @@ const GLib = imports.gi.GLib;
 const GObject = imports.gi.GObject;
 const Gio = imports.gi.Gio;
 const Gtk = imports.gi.Gtk;
-const Lang = imports.lang;
 
 const Gettext = imports.gettext.domain('krypto@sereneblue');
 const _ = Gettext.gettext;
