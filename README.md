@@ -3,7 +3,7 @@
 ![krypto version](https://img.shields.io/badge/version-9-brightgreen.svg)
 ![GPL v3 License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)
 
-<p align="center"> 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/14242625/114322214-e0d5cf00-9aec-11eb-9082-f2b3331e931d.png">
 </p>
 
@@ -13,7 +13,7 @@ A cryptocurrency utility for gnome-shell.
 
 ### From extensions.gnome.org
 
-Visit [extensions.gnome.org](https://extensions.gnome.org/extension/1913/krypto/) and click on the switch to install krypto. 
+Visit [extensions.gnome.org](https://extensions.gnome.org/extension/1913/krypto/) and click on the switch to install krypto.
 
 ### Using the install script
 ```
@@ -41,11 +41,13 @@ krypto can be configured from the Extensions app.
 
 #### Cryptocurrencies
 
-There are 45 supported cryptocurrencies:
+There are 55 supported cryptocurrencies:
 
 	Ox
 	Aave
 	Augur
+	Avalanche
+	Axie Infinity Shards
 	Basic Attention Token
 	Binance Coin
 	Bitcoin
@@ -58,15 +60,19 @@ There are 45 supported cryptocurrencies:
 	Dash
 	Decred
 	Dogecoin
+	dYdX
 	EOS
 	Ethereum
 	Ethereum Classic
 	Filecoin
 	FTX Token
+	Harmony
 	IOTA
+	Kitty Inu
 	Klaytn
 	Lisk
 	Litecoin
+	Loopring
 	Maker
 	Monero
 	Nano
@@ -76,6 +82,7 @@ There are 45 supported cryptocurrencies:
 	PancakeSwap
 	Polkadot
 	Ripple
+	Shiba Inu
 	Solana
 	Stellar
 	Stratis
@@ -83,9 +90,12 @@ There are 45 supported cryptocurrencies:
 	Terra
 	Tezos
 	THETA
+	Trader Joe
 	TRON
 	Uniswap
-	Vechain
+	VeChain
+	VeChainThor
+	WOO
 	yearn.finance
 	Zcash
 
