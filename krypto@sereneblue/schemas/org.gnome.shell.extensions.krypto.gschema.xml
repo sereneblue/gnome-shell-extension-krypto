@@ -38,6 +38,14 @@
          <default>false</default>
          <summary>Enable Augur</summary>
       </key>
+      <key name="krypto-prefs-avax" type="b">
+         <default>false</default>
+         <summary>Enable Avalanche</summary>
+      </key>
+      <key name="krypto-prefs-axs" type="b">
+         <default>false</default>
+         <summary>Enable Axie Infinity Shards</summary>
+      </key>
       <key name="krypto-prefs-bat" type="b">
          <default>false</default>
          <summary>Enable Basic Attention Token</summary>
@@ -86,6 +94,10 @@
          <default>false</default>
          <summary>Enable Dogecoin</summary>
       </key>
+      <key name="krypto-prefs-dydx" type="b">
+         <default>false</default>
+         <summary>Enable dYdX</summary>
+      </key>
       <key name="krypto-prefs-eos" type="b">
          <default>false</default>
          <summary>Enable EOS</summary>
@@ -106,6 +118,10 @@
          <default>false</default>
          <summary>Enable FTX Token</summary>
       </key>
+      <key name="krypto-prefs-one" type="b">
+         <default>false</default>
+         <summary>Enable Harmony</summary>
+      </key>
       <key name="krypto-prefs-iota" type="b">
          <default>false</default>
          <summary>Enable IOTA</summary>
@@ -114,6 +130,10 @@
          <default>false</default>
          <summary>Enable Klaytn</summary>
       </key>
+      <key name="krypto-prefs-kitty" type="b">
+         <default>false</default>
+         <summary>Enable Kitty Inu</summary>
+      </key>
       <key name="krypto-prefs-lsk" type="b">
          <default>false</default>
          <summary>Enable Lisk</summary>
@@ -121,6 +141,10 @@
       <key name="krypto-prefs-ltc" type="b">
          <default>false</default>
          <summary>Enable Litecoin</summary>
+      </key>
+      <key name="krypto-prefs-lrc" type="b">
+         <default>false</default>
+         <summary>Enable Loopring</summary>
       </key>
       <key name="krypto-prefs-mkr" type="b">
          <default>false</default>
@@ -158,6 +182,10 @@
          <default>false</default>
          <summary>Enable Ripple</summary>
       </key>
+      <key name="krypto-prefs-shib" type="b">
+         <default>false</default>
+         <summary>Enable Shiba Inu</summary>
+      </key>
       <key name="krypto-prefs-sol" type="b">
          <default>false</default>
          <summary>Enable Solana</summary>
@@ -186,6 +214,10 @@
          <default>false</default>
          <summary>Enable THETA</summary>
       </key>
+      <key name="krypto-prefs-joe" type="b">
+         <default>false</default>
+         <summary>Enable Trader Joe</summary>
+      </key>
       <key name="krypto-prefs-trx" type="b">
          <default>false</default>
          <summary>Enable TRON</summary>
@@ -196,7 +228,15 @@
       </key>
       <key name="krypto-prefs-vet" type="b">
          <default>false</default>
-         <summary>Enable Vechain</summary>
+         <summary>Enable VeChain</summary>
+      </key>
+      <key name="krypto-prefs-vtho" type="b">
+         <default>false</default>
+         <summary>Enable VeChainThor</summary>
+      </key>
+      <key name="krypto-prefs-woo" type="b">
+         <default>false</default>
+         <summary>Enable WOO</summary>
       </key>
       <key name="krypto-prefs-yfi" type="b">
          <default>false</default>
