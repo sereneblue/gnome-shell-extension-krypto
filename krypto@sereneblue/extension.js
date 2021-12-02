@@ -9,7 +9,6 @@ const PopupMenu = imports.ui.popupMenu;
 
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
-const Convenience = Me.imports.convenience;
 const Settings = Me.imports.constants;
 
 let _httpSession;
@@ -19,7 +18,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             super._init(0.0, "krypto", false);
             this._base_url = "https://min-api.cryptocompare.com/data/pricemulti?fsyms="
             this._txt_label = "Loading...";
-            this._settings = Convenience.getSettings('org.gnome.shell.extensions.krypto');
+            this._settings = ExtensionUtils.getSettings('org.gnome.shell.extensions.krypto');
             this._currency_data = {};
 
             this.buttonText = new St.Label({

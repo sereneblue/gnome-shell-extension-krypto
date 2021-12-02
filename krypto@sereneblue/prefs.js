@@ -8,11 +8,10 @@ const _ = Gettext.gettext;
 
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
-const Lib = Me.imports.convenience;
 const Settings = Me.imports.constants;
 
 function init() {
-    Lib.initTranslations('krypto@sereneblue');
+    ExtensionUtils.initTranslations('krypto@sereneblue');
 }
 
 const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' },
@@ -24,7 +23,7 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
             this.spacing = 0;
 
             // creates the settings
-            this._settings = Lib.getSettings("org.gnome.shell.extensions.krypto");
+            this._settings = ExtensionUtils.getSettings("org.gnome.shell.extensions.krypto");
 
             // creates the ui builder and add the main resource file
             let preferencesUI = Me.path + "/ui/preferences.ui";
