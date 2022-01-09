@@ -182,6 +182,11 @@
          <default>false</default>
          <summary>Enable Ripple</summary>
       </key>
+      <key name="krypto-prefs-saito" type="b">
+         <default>false</default>
+         <summary>Enable Saito</summary>
+      </key>
+
       <key name="krypto-prefs-shib" type="b">
          <default>false</default>
          <summary>Enable Shiba Inu</summary>
