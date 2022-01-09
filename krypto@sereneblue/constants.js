@@ -47,6 +47,7 @@ var CRYPTOCURRENCIES = [
 	{ name: "PancakeSwap", 				setting: "krypto-prefs-cake", 	symbol: "CAKE"},
 	{ name: "Polkadot", 				setting: "krypto-prefs-dot", 	symbol: "DOT"},
 	{ name: "Ripple", 					setting: "krypto-prefs-xrp", 	symbol: "XRP"},
+	{ name: "Saito",				setting:"krypto-prefs-saito",	symbol: "SAITO"},
 	{ name: "Shiba Inu",				setting:"krypto-prefs-shib",	symbol: "SHIB"},
 	{ name: "Solana", 					setting: "krypto-prefs-sol", 	symbol: "SOL"},
 	{ name: "Stellar", 					setting: "krypto-prefs-xlm", 	symbol: "XLM"},
