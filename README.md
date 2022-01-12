@@ -41,10 +41,11 @@ krypto can be configured from the Extensions app.
 
 #### Cryptocurrencies
 
-There are 55 supported cryptocurrencies:
+There are 63 supported cryptocurrencies:
 
-	Ox
+	0x
 	Aave
+	Akash Network
 	Augur
 	Avalanche
 	Axie Infinity Shards
@@ -64,6 +65,7 @@ There are 55 supported cryptocurrencies:
 	EOS
 	Ethereum
 	Ethereum Classic
+	Fantom
 	Filecoin
 	FTX Token
 	Harmony
@@ -76,12 +78,18 @@ There are 55 supported cryptocurrencies:
 	Maker
 	Monero
 	Nano
+	Near
 	NEM
 	NEO
 	Nxt
 	PancakeSwap
+	Persistence
+	Polygon
 	Polkadot
 	Ripple
+	Saito
+	Secret
+	Sentinel
 	Shiba Inu
 	Solana
 	Stellar
