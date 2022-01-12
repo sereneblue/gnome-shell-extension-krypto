@@ -34,6 +34,10 @@
          <default>false</default>
          <summary>Enable Aave</summary>
       </key>
+      <key name="krypto-prefs-akt" type="b">
+         <default>false</default>
+         <summary>Enable Akash Network</summary>
+      </key>
       <key name="krypto-prefs-rep" type="b">
          <default>false</default>
          <summary>Enable Augur</summary>
@@ -110,6 +114,10 @@
          <default>false</default>
          <summary>Enable Ethereum Classic</summary>
       </key>
+      <key name="krypto-prefs-ftm" type="b">
+         <default>false</default>
+         <summary>Enable Fantom</summary>
+      </key>
       <key name="krypto-prefs-fil" type="b">
          <default>false</default>
          <summary>Enable Filecoin</summary>
@@ -158,6 +166,10 @@
          <default>false</default>
          <summary>Enable Nano</summary>
       </key>
+      <key name="krypto-prefs-near" type="b">
+         <default>false</default>
+         <summary>Enable Near</summary>
+      </key>
       <key name="krypto-prefs-xem" type="b">
          <default>false</default>
          <summary>Enable NEM</summary>
@@ -174,6 +186,14 @@
          <default>false</default>
          <summary>Enable PancakeSwap</summary>
       </key>
+      <key name="krypto-prefs-xprt" type="b">
+         <default>false</default>
+         <summary>Enable Persistence</summary>
+      </key>
+      <key name="krypto-prefs-matic" type="b">
+         <default>false</default>
+         <summary>Enable Polygon</summary>
+      </key>
       <key name="krypto-prefs-dot" type="b">
          <default>false</default>
          <summary>Enable Polkadot</summary>
@@ -186,7 +206,14 @@
          <default>false</default>
          <summary>Enable Saito</summary>
       </key>
-
+      <key name="krypto-prefs-scrt" type="b">
+         <default>false</default>
+         <summary>Enable Secret</summary>
+      </key>
+      <key name="krypto-prefs-dvpn" type="b">
+         <default>false</default>
+         <summary>Enable Sentinel</summary>
+      </key>
       <key name="krypto-prefs-shib" type="b">
          <default>false</default>
          <summary>Enable Shiba Inu</summary>
