@@ -18,6 +18,12 @@
           </object>
         </child>
         <child>
+          <object class="GtkCheckButton" id="currencyEnabledInTopBar">
+            <property name="label">Show in top bar</property>
+            <property name="valign">center</property>
+          </object>
+        </child>
+        <child>
           <object class="GtkSwitch" id="currencySwitch">
             <property name="valign">center</property>
           </object>

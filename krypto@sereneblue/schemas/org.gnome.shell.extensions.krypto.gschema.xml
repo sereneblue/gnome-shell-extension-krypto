@@ -30,253 +30,505 @@
          <default>false</default>
          <summary>Enable Ox</summary>
       </key>
+      <key name="krypto-prefs-zrx-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Ox in top bar</summary>
+      </key>   
       <key name="krypto-prefs-aave" type="b">
          <default>false</default>
          <summary>Enable Aave</summary>
+      </key>
+      <key name="krypto-prefs-aave-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Aave in top bar</summary>
       </key>
       <key name="krypto-prefs-akt" type="b">
          <default>false</default>
          <summary>Enable Akash Network</summary>
       </key>
+      <key name="krypto-prefs-akt-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Akash Network in top bar</summary>
+      </key>
       <key name="krypto-prefs-rep" type="b">
          <default>false</default>
          <summary>Enable Augur</summary>
+      </key>
+      <key name="krypto-prefs-rep-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Augur in top bar</summary>
       </key>
       <key name="krypto-prefs-avax" type="b">
          <default>false</default>
          <summary>Enable Avalanche</summary>
       </key>
+      <key name="krypto-prefs-avax-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Avalanche in top bar</summary>
+      </key>
       <key name="krypto-prefs-axs" type="b">
          <default>false</default>
          <summary>Enable Axie Infinity Shards</summary>
+      </key>
+      <key name="krypto-prefs-axs-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Axie Infinity Shards in top bar</summary>
       </key>
       <key name="krypto-prefs-bat" type="b">
          <default>false</default>
          <summary>Enable Basic Attention Token</summary>
       </key>
+      <key name="krypto-prefs-bat-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Basic Attention Token in top bar</summary>
+      </key>
       <key name="krypto-prefs-bnb" type="b">
          <default>false</default>
          <summary>Enable Binance Coin</summary>
+      </key>
+      <key name="krypto-prefs-bnb-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Binance Coin in top bar</summary>
       </key>
       <key name="krypto-prefs-btc" type="b">
          <default>true</default>
          <summary>Enable Bitcoin</summary>
       </key>
+      <key name="krypto-prefs-btc-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Bitcoin in top bar</summary>
+      </key>
       <key name="krypto-prefs-bch" type="b">
          <default>false</default>
          <summary>Enable Bitcoin Cash</summary>
+      </key>
+      <key name="krypto-prefs-bch-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Bitcoin Cash in top bar</summary>
       </key>
       <key name="krypto-prefs-btt" type="b">
          <default>false</default>
          <summary>Enable BitTorrent</summary>
       </key>
+      <key name="krypto-prefs-btt-topbar" type="b">
+         <default>false</default>
+         <summary>Enable BitTorrent in top bar</summary>
+      </key>
       <key name="krypto-prefs-ada" type="b">
          <default>false</default>
          <summary>Enable Cardano</summary>
+      </key>
+      <key name="krypto-prefs-ada-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Cardano in top bar</summary>
       </key>
       <key name="krypto-prefs-link" type="b">
          <default>false</default>
          <summary>Enable Chainlink</summary>
       </key>
+      <key name="krypto-prefs-link-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Chainlink in top bar</summary>
+      </key>
       <key name="krypto-prefs-atom" type="b">
          <default>false</default>
          <summary>Enable Cosmos</summary>
+      </key>
+      <key name="krypto-prefs-atom-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Cosmos in top bar</summary>
       </key>
       <key name="krypto-prefs-cro" type="b">
          <default>false</default>
          <summary>Enable Crypto.com Coin</summary>
       </key>
+      <key name="krypto-prefs-cro-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Crypto.com Coin in top bar</summary>
+      </key>
       <key name="krypto-prefs-dash" type="b">
          <default>false</default>
          <summary>Enable Dash</summary>
+      </key>
+      <key name="krypto-prefs-dash-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Dash in top bar</summary>
       </key>
       <key name="krypto-prefs-dcr" type="b">
          <default>false</default>
          <summary>Enable Decred</summary>
       </key>
+      <key name="krypto-prefs-dcr-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Decred in top bar</summary>
+      </key>
       <key name="krypto-prefs-doge" type="b">
          <default>false</default>
          <summary>Enable Dogecoin</summary>
+      </key>
+      <key name="krypto-prefs-doge-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Dogecoin in top bar</summary>
       </key>
       <key name="krypto-prefs-dydx" type="b">
          <default>false</default>
          <summary>Enable dYdX</summary>
       </key>
+      <key name="krypto-prefs-dydx-topbar" type="b">
+         <default>false</default>
+         <summary>Enable dYdX in top bar</summary>
+      </key>
       <key name="krypto-prefs-eos" type="b">
          <default>false</default>
          <summary>Enable EOS</summary>
+      </key>
+      <key name="krypto-prefs-eos-topbar" type="b">
+         <default>false</default>
+         <summary>Enable EOS in top bar</summary>
       </key>
       <key name="krypto-prefs-eth" type="b">
          <default>false</default>
          <summary>Enable Ethereum</summary>
       </key>
+      <key name="krypto-prefs-eth-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Ethereum in top bar</summary>
+      </key>
       <key name="krypto-prefs-etc" type="b">
          <default>false</default>
          <summary>Enable Ethereum Classic</summary>
+      </key>
+      <key name="krypto-prefs-etc-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Ethereum Classic in top bar</summary>
       </key>
       <key name="krypto-prefs-ftm" type="b">
          <default>false</default>
          <summary>Enable Fantom</summary>
       </key>
+      <key name="krypto-prefs-ftm-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Fantom in top bar</summary>
+      </key>
       <key name="krypto-prefs-fil" type="b">
          <default>false</default>
          <summary>Enable Filecoin</summary>
+      </key>
+      <key name="krypto-prefs-fil-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Filecoin in top bar</summary>
       </key>
       <key name="krypto-prefs-ftx" type="b">
          <default>false</default>
          <summary>Enable FTX Token</summary>
       </key>
+      <key name="krypto-prefs-ftx-topbar" type="b">
+         <default>false</default>
+         <summary>Enable FTX Token in top bar</summary>
+      </key>
       <key name="krypto-prefs-one" type="b">
          <default>false</default>
          <summary>Enable Harmony</summary>
+      </key>
+      <key name="krypto-prefs-one-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Harmony in top bar</summary>
       </key>
       <key name="krypto-prefs-iota" type="b">
          <default>false</default>
          <summary>Enable IOTA</summary>
       </key>
+      <key name="krypto-prefs-iota-topbar" type="b">
+         <default>false</default>
+         <summary>Enable IOTA in top bar</summary>
+      </key>
       <key name="krypto-prefs-klay" type="b">
          <default>false</default>
          <summary>Enable Klaytn</summary>
+      </key>
+      <key name="krypto-prefs-klay-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Klaytn in top bar</summary>
       </key>
       <key name="krypto-prefs-kitty" type="b">
          <default>false</default>
          <summary>Enable Kitty Inu</summary>
       </key>
+      <key name="krypto-prefs-kitty-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Kitty Inu in top bar</summary>
+      </key>
       <key name="krypto-prefs-lsk" type="b">
          <default>false</default>
          <summary>Enable Lisk</summary>
+      </key>
+      <key name="krypto-prefs-lsk-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Lisk in top bar</summary>
       </key>
       <key name="krypto-prefs-ltc" type="b">
          <default>false</default>
          <summary>Enable Litecoin</summary>
       </key>
+      <key name="krypto-prefs-ltc-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Litecoin in top bar</summary>
+      </key>
       <key name="krypto-prefs-lrc" type="b">
          <default>false</default>
          <summary>Enable Loopring</summary>
+      </key>
+      <key name="krypto-prefs-lrc-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Loopring in top bar</summary>
       </key>
       <key name="krypto-prefs-mkr" type="b">
          <default>false</default>
          <summary>Enable Maker</summary>
       </key>
+      <key name="krypto-prefs-mkr-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Maker in top bar</summary>
+      </key>
       <key name="krypto-prefs-xmr" type="b">
          <default>false</default>
          <summary>Enable Monero</summary>
+      </key>
+      <key name="krypto-prefs-xmr-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Monero in top bar</summary>
       </key>
       <key name="krypto-prefs-nano" type="b">
          <default>false</default>
          <summary>Enable Nano</summary>
       </key>
+      <key name="krypto-prefs-nano-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Nano in top bar</summary>
+      </key>
       <key name="krypto-prefs-near" type="b">
          <default>false</default>
          <summary>Enable Near</summary>
+      </key>
+      <key name="krypto-prefs-near-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Near in top bar</summary>
       </key>
       <key name="krypto-prefs-xem" type="b">
          <default>false</default>
          <summary>Enable NEM</summary>
       </key>
+      <key name="krypto-prefs-xem-topbar" type="b">
+         <default>false</default>
+         <summary>Enable NEM in top bar</summary>
+      </key>
       <key name="krypto-prefs-neo" type="b">
          <default>false</default>
          <summary>Enable NEO</summary>
+      </key>
+      <key name="krypto-prefs-neo-topbar" type="b">
+         <default>false</default>
+         <summary>Enable NEO in top bar</summary>
       </key>
       <key name="krypto-prefs-nxt" type="b">
          <default>false</default>
          <summary>Enable Nxt</summary>
       </key>
+      <key name="krypto-prefs-nxt-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Nxt in top bar</summary>
+      </key>
       <key name="krypto-prefs-cake" type="b">
          <default>false</default>
          <summary>Enable PancakeSwap</summary>
+      </key>
+      <key name="krypto-prefs-cake-topbar" type="b">
+         <default>false</default>
+         <summary>Enable PancakeSwap in top bar</summary>
       </key>
       <key name="krypto-prefs-xprt" type="b">
          <default>false</default>
          <summary>Enable Persistence</summary>
       </key>
+      <key name="krypto-prefs-xprt-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Persistence in top bar</summary>
+      </key>
       <key name="krypto-prefs-matic" type="b">
          <default>false</default>
          <summary>Enable Polygon</summary>
+      </key>
+      <key name="krypto-prefs-matic-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Polygon in top bar</summary>
       </key>
       <key name="krypto-prefs-dot" type="b">
          <default>false</default>
          <summary>Enable Polkadot</summary>
       </key>
+      <key name="krypto-prefs-dot-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Polkadot in top bar</summary>
+      </key>
       <key name="krypto-prefs-xrp" type="b">
          <default>false</default>
          <summary>Enable Ripple</summary>
+      </key>
+      <key name="krypto-prefs-xrp-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Ripple in top bar</summary>
       </key>
       <key name="krypto-prefs-saito" type="b">
          <default>false</default>
          <summary>Enable Saito</summary>
       </key>
+      <key name="krypto-prefs-saito-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Saito in top bar</summary>
+      </key>
       <key name="krypto-prefs-scrt" type="b">
          <default>false</default>
          <summary>Enable Secret</summary>
+      </key>
+      <key name="krypto-prefs-scrt-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Secret in top bar</summary>
       </key>
       <key name="krypto-prefs-dvpn" type="b">
          <default>false</default>
          <summary>Enable Sentinel</summary>
       </key>
+      <key name="krypto-prefs-dvpn-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Sentinel in top bar</summary>
+      </key>
       <key name="krypto-prefs-shib" type="b">
          <default>false</default>
          <summary>Enable Shiba Inu</summary>
+      </key>
+      <key name="krypto-prefs-shib-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Shiba Inu in top bar</summary>
       </key>
       <key name="krypto-prefs-sol" type="b">
          <default>false</default>
          <summary>Enable Solana</summary>
       </key>
+      <key name="krypto-prefs-sol-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Solana in top bar</summary>
+      </key>
       <key name="krypto-prefs-xlm" type="b">
          <default>false</default>
          <summary>Enable Stellar</summary>
+      </key>
+      <key name="krypto-prefs-xlm-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Stellar in top bar</summary>
       </key>
       <key name="krypto-prefs-strat" type="b">
          <default>false</default>
          <summary>Enable Stratis</summary>
       </key>
+      <key name="krypto-prefs-strat-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Stratis in top bar</summary>
+      </key>
       <key name="krypto-prefs-sushi" type="b">
          <default>false</default>
          <summary>Enable SushiSwap</summary>
+      </key>
+      <key name="krypto-prefs-sushi-topbar" type="b">
+         <default>false</default>
+         <summary>Enable SushiSwap in top bar</summary>
       </key>
       <key name="krypto-prefs-luna" type="b">
          <default>false</default>
          <summary>Enable Terra</summary>
       </key>
+      <key name="krypto-prefs-luna-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Terra in top bar</summary>
+      </key>
       <key name="krypto-prefs-xtz" type="b">
          <default>false</default>
          <summary>Enable Tezos</summary>
+      </key>
+      <key name="krypto-prefs-xtz-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Tezos in top bar</summary>
       </key>
       <key name="krypto-prefs-theta" type="b">
          <default>false</default>
          <summary>Enable THETA</summary>
       </key>
+      <key name="krypto-prefs-theta-topbar" type="b">
+         <default>false</default>
+         <summary>Enable THETA in top bar</summary>
+      </key>
       <key name="krypto-prefs-joe" type="b">
          <default>false</default>
          <summary>Enable Trader Joe</summary>
+      </key>
+      <key name="krypto-prefs-joe-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Trader Joe in top bar</summary>
       </key>
       <key name="krypto-prefs-trx" type="b">
          <default>false</default>
          <summary>Enable TRON</summary>
       </key>
+      <key name="krypto-prefs-trx-topbar" type="b">
+         <default>false</default>
+         <summary>Enable TRON in top bar</summary>
+      </key>
       <key name="krypto-prefs-uni" type="b">
          <default>false</default>
          <summary>Enable Uniswap</summary>
+      </key>
+      <key name="krypto-prefs-uni-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Uniswap in top bar</summary>
       </key>
       <key name="krypto-prefs-vet" type="b">
          <default>false</default>
          <summary>Enable VeChain</summary>
       </key>
+      <key name="krypto-prefs-vet-topbar" type="b">
+         <default>false</default>
+         <summary>Enable VeChain in top bar</summary>
+      </key>
       <key name="krypto-prefs-vtho" type="b">
          <default>false</default>
          <summary>Enable VeChainThor</summary>
+      </key>
+      <key name="krypto-prefs-vtho-topbar" type="b">
+         <default>false</default>
+         <summary>Enable VeChainThor in top bar</summary>
       </key>
       <key name="krypto-prefs-woo" type="b">
          <default>false</default>
          <summary>Enable WOO</summary>
       </key>
+      <key name="krypto-prefs-woo-topbar" type="b">
+         <default>false</default>
+         <summary>Enable WOO in top bar</summary>
+      </key>
       <key name="krypto-prefs-yfi" type="b">
          <default>false</default>
          <summary>Enable yearn.finance</summary>
       </key>
+      <key name="krypto-prefs-yfi-topbar" type="b">
+         <default>false</default>
+         <summary>Enable yearn.finance in top bar</summary>
+      </key>
       <key name="krypto-prefs-zec" type="b">
          <default>false</default>
          <summary>Enable Zcash</summary>
+      </key>
+      <key name="krypto-prefs-zec-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Zcash in top bar</summary>
       </key>
    </schema>
 </schemalist>

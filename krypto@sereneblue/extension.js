@@ -150,6 +150,14 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             let txt_label = "";
             let keys = Object.keys(data);
 
+            let topBarKeys = {};
+
+            for (let i = 0; i < Settings.CRYPTOCURRENCIES.length; i++) {
+                if (this._settings.get_boolean(Settings.CRYPTOCURRENCIES[i].setting + "-topbar")) {
+                    topBarKeys[Settings.CRYPTOCURRENCIES[i].symbol] = true;
+                }
+            }
+
             if (keys.length > 0) {
                 // clear the price menu & reset internal rate
                 this._prices_menu.menu.removeAll();
@@ -160,7 +168,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
                     let price = data[keys[i]][this._getFiatAAbbr()];
                     this._currency_data[keys[i]] = price;
 
-                    if (i < this._settings.get_int(Settings.PREF_NUM_DISPLAY)) {
+                    if (topBarKeys[keys[i]]) {
                       txt_label += `${i > 0 ? this._getDelim() + ' ' : '' }${keys[i]} ${this._getSymbol()}${price}`;
                     } else {
                       let txt = `${keys[i]} ${this._getSymbol()}${data[keys[i]][this._getFiatAAbbr()]}`;

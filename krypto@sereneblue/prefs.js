@@ -52,6 +52,8 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
                     );
                 }
 
+                this._migrate();
+                this._updateCheckboxes(true)
                 this.append(main_container);
 
                 let prefs_combo_fiat = builder.get_object("prefs_combo_fiat");
@@ -64,6 +66,8 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
                     prefs_combo_fiat.append(i.toString(), Settings.FIAT[i].abbr);
                 }
 
+                prefs_spin_num.connect("value-changed", this._on_numDisplay_changed.bind(this));
+
                 // bind preferences settings
                 this._settings.bind(Settings.PREF_FIAT, prefs_combo_fiat, "active", Gio.SettingsBindFlags.DEFAULT);
                 this._settings.bind(Settings.PREF_UPDATE_SEC, prefs_spin_update, "value", Gio.SettingsBindFlags.DEFAULT);
@@ -74,12 +78,29 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
         }
 
         _addCryptoRow(currency, settings) {
-            let row = new CryptoCurrencyRow(currency, settings, this._moveRow.bind(this));
+            let row = new CryptoCurrencyRow(currency, settings, this._moveRow.bind(this), this._updateCheckboxes.bind(this));
 
             if (row.enabled) {
                 this._enabledList.append(row);
             } else {
                 this._cryptoList.append(row);
+            }
+        }
+
+        _migrate() {
+            let activeList = [
+                ...this._enabledList
+            ];
+
+            let numActiveTopBar = activeList.filter(r => r.topBarEnabled).length;
+
+            if (numActiveTopBar == 0 && activeList.length) {
+                let maxActive = this._settings.get_int(Settings.PREF_NUM_DISPLAY)
+                let numToUpdate = activeList.length > maxActive ? maxActive : activeList.length;
+
+                for (let i = 0; i < numToUpdate; i++) {
+                    activeList[i].topBarEnabled = true;
+                }
             }
         }
 
@@ -98,10 +119,74 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
                     this._cryptoList.append(row);
                 }
             }
+
+            if (wasEnabled) {
+                let activeTotal = [
+                    ...this._enabledList
+                ].filter(r => r.topBarEnabled).length;
+                let maxActive = this._settings.get_int(Settings.PREF_NUM_DISPLAY)
+
+                if (activeTotal < maxActive) {
+                    row.topBarEnabled = true;
+                }
+            } else {
+                row.topBarEnabled = false;
+            }
+
+            this._updateCheckboxes(wasEnabled)
         }
 
         _sortList(a, b) {
             return a.name.localeCompare(b.name);
+        }
+
+        _updateCheckboxes(toggled, maxActive=null) {
+            let activeTotal = [
+                ...this._enabledList
+            ].filter(r => r.topBarEnabled).length;
+
+            let inactiveList = [
+                ...this._enabledList
+            ].filter(r => !r.topBarEnabled);
+
+            maxActive = maxActive || this._settings.get_int(Settings.PREF_NUM_DISPLAY)
+            if (toggled) {
+                if (activeTotal == maxActive) {
+                    for (let i = 0; i < inactiveList.length; i++) {
+                        inactiveList[i]._currencyEnabledInTopBar.set_sensitive(false)
+                    }
+
+                    return
+                }
+            }
+
+            if (activeTotal < maxActive) {
+                for (let i = 0; i < inactiveList.length; i++) {
+                    inactiveList[i]._currencyEnabledInTopBar.set_sensitive(true)
+                }
+            }
+        }
+
+        _on_numDisplay_changed(state) {
+            let val = state.get_value();
+
+            let activeList = [
+                ...this._enabledList
+            ].filter(r => r.topBarEnabled);
+
+            if (activeList.length >= val) {
+                let diff = activeList.length - val;
+
+                for (let i = 0; i < diff; i++) {
+                    activeList[activeList.length - (1 + i)].topBarEnabled = false;
+                }
+
+                this._updateCheckboxes(true, val);
+            } else if (val > activeList.length) {
+                let diff = val - activeList.length;
+                
+                this._updateCheckboxes(false, val);
+            }
         }
     });
 
@@ -111,21 +196,27 @@ const CryptoCurrencyRow = GObject.registerClass({
     Template: 'file:///' + Me.path + "/ui/crypto-row.ui",
     InternalChildren: [
         'currencyLabel',
+        'currencyEnabledInTopBar',
         'currencySwitch'
-    ],
+    ]
 }, class ExtensionRow extends Gtk.ListBoxRow {
-    _init(currency, settings, callback) {
+    _init(currency, settings, callback, secondCallback) {
         super._init();
 
         this._app = Gio.Application.get_default();
         this._cryptocurrency = currency;
         this._settings = settings;
         this._switchCallback = callback;
+        this._checkboxCallback = secondCallback;
 
         this._currencyLabel.label = this._cryptocurrency.name;
         this._currencySwitch.connect("notify::active", this._on_cryptoSwitch_changed.bind(this));
+        
+        this._currencyEnabledInTopBar.set_visible(this._settings.get_boolean(this._cryptocurrency.setting));
+        this._currencyEnabledInTopBar.connect("toggled", this._on_currencyEnabledInTopBar_changed.bind(this));
 
         this._settings.bind(this._cryptocurrency.setting, this._currencySwitch, "active", Gio.SettingsBindFlags.DEFAULT);
+        this._settings.bind(this._cryptocurrency.setting + "-topbar", this._currencyEnabledInTopBar, "active", Gio.SettingsBindFlags.DEFAULT);
     }
 
     get enabled() {
@@ -136,8 +227,27 @@ const CryptoCurrencyRow = GObject.registerClass({
         return this._cryptocurrency.name;
     }
 
+    get topBarEnabled() {
+        return this._currencyEnabledInTopBar.get_active();
+    }
+
+    set topBarEnabled(enabled) {
+        log(enabled)
+        log(this._cryptocurrency.name)
+        this._currencyEnabledInTopBar.set_active(enabled);
+    }
+
+    _on_currencyEnabledInTopBar_changed(state) {
+        let enabled = state.get_active();
+        
+        this._checkboxCallback(enabled);
+    }
+
     _on_cryptoSwitch_changed(state) {
         let enabled = state.get_active();
+
+        this._currencyEnabledInTopBar.set_visible(enabled);
+        this._currencyEnabledInTopBar.set_sensitive(enabled);
 
         this._switchCallback(this._cryptocurrency, enabled);
     }
