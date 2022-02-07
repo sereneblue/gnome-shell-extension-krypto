@@ -41,7 +41,7 @@ krypto can be configured from the Extensions app.
 
 #### Cryptocurrencies
 
-There are 63 supported cryptocurrencies:
+There are 64 supported cryptocurrencies:
 
 	0x
 	Aave
@@ -82,6 +82,7 @@ There are 63 supported cryptocurrencies:
 	NEM
 	NEO
 	Nxt
+	Osmosis
 	PancakeSwap
 	Persistence
 	Polygon

@@ -33,7 +33,7 @@
       <key name="krypto-prefs-zrx-topbar" type="b">
          <default>false</default>
          <summary>Enable Ox in top bar</summary>
-      </key>   
+      </key>
       <key name="krypto-prefs-aave" type="b">
          <default>false</default>
          <summary>Enable Aave</summary>
@@ -337,6 +337,14 @@
       <key name="krypto-prefs-nxt-topbar" type="b">
          <default>false</default>
          <summary>Enable Nxt in top bar</summary>
+      </key>
+      <key name="krypto-prefs-osmo" type="b">
+         <default>false</default>
+         <summary>Enable Osmosis</summary>
+      </key>
+      <key name="krypto-prefs-osmo-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Osmosis in top bar</summary>
       </key>
       <key name="krypto-prefs-cake" type="b">
          <default>false</default>
