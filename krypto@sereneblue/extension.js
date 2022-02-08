@@ -147,6 +147,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
         }
 
         _refreshUI(data) {
+            let delim_count = 0; 
             let txt_label = "";
             let keys = Object.keys(data);
 
@@ -169,7 +170,8 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
                     this._currency_data[keys[i]] = price;
 
                     if (topBarKeys[keys[i]]) {
-                      txt_label += `${i > 0 ? ' ' + this._getDelim() + ' ' : '' }${keys[i]} ${this._getSymbol()}${price}`;
+                      txt_label += `${delim_count > 0 ? ' ' + this._getDelim() + ' ' : '' }${keys[i]} ${this._getSymbol()}${price}`;
+                      delim_count++;
                     } else {
                       let txt = `${keys[i]} ${this._getSymbol()}${data[keys[i]][this._getFiatAAbbr()]}`;
                       this._prices_menu.menu.addMenuItem(new PopupMenu.PopupMenuItem(txt, {reactive: false}));
