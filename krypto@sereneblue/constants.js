@@ -47,6 +47,7 @@ var CRYPTOCURRENCIES = [
 	{ name: "NEM", 						setting: "krypto-prefs-xem", 	symbol: "XEM"},
 	{ name: "NEO", 						setting: "krypto-prefs-neo", 	symbol: "NEO"},
 	{ name: "Nxt", 						setting: "krypto-prefs-nxt", 	symbol: "NXT"},
+	{ name: "Osmosis",					setting: "krypto-prefs-osmo",	symbol: "OSMO" },
 	{ name: "PancakeSwap", 				setting: "krypto-prefs-cake", 	symbol: "CAKE"},
 	{ name: "Persistence",				setting: "krypto-prefs-xprt",	symbol: "XPRT" },
 	{ name: "Polygon",					setting: "krypto-prefs-matic",	symbol: "MATIC" },
