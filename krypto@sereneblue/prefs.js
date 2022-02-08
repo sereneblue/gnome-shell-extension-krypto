@@ -232,8 +232,6 @@ const CryptoCurrencyRow = GObject.registerClass({
     }
 
     set topBarEnabled(enabled) {
-        log(enabled)
-        log(this._cryptocurrency.name)
         this._currencyEnabledInTopBar.set_active(enabled);
     }
 
