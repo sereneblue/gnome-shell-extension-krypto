@@ -41,7 +41,7 @@ krypto can be configured from the Extensions app.
 
 #### Cryptocurrencies
 
-There are 64 supported cryptocurrencies:
+There are 67 supported cryptocurrencies:
 
 	0x
 	Aave
@@ -60,6 +60,7 @@ There are 64 supported cryptocurrencies:
 	Crypto.com Coin
 	Dash
 	Decred
+	DeFi Kingdoms
 	Dogecoin
 	dYdX
 	EOS
@@ -92,6 +93,7 @@ There are 64 supported cryptocurrencies:
 	Secret
 	Sentinel
 	Shiba Inu
+	Sifchain
 	Solana
 	Stellar
 	Stratis
@@ -107,6 +109,7 @@ There are 64 supported cryptocurrencies:
 	WOO
 	yearn.finance
 	Zcash
+	Zilliqa
 
 #### Fiat Currencies
 There are currently 18 supported fiat currencies. If you'd like a specific currency added, please submit an issue or feel free to submit a merge request.

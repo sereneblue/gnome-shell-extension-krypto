@@ -25,6 +25,7 @@ var CRYPTOCURRENCIES = [
 	{ name: "Crypto.com Coin", 			setting: "krypto-prefs-cro", 	symbol: "CRO"},
 	{ name: "Dash", 					setting: "krypto-prefs-dash", 	symbol: "DASH"},
 	{ name: "Decred", 					setting: "krypto-prefs-dcr", 	symbol: "DCR"},
+	{ name: "DeFi Kingdoms",			setting: "krypto-prefs-jewel",	symbol: "JEWEL" },
 	{ name: "Dogecoin", 				setting: "krypto-prefs-doge", 	symbol: "DOGE"},
 	{ name: "dYdX",						setting: "krypto-prefs-dydx",	symbol: "DYDX"},
 	{ name: "EOS", 						setting: "krypto-prefs-eos", 	symbol: "EOS"},
@@ -57,6 +58,7 @@ var CRYPTOCURRENCIES = [
 	{ name: "Secret",					setting: "krypto-prefs-scrt",	symbol: "SCRT" },
 	{ name: "Sentinel",					setting: "krypto-prefs-dvpn",	symbol: "DVPN" },
 	{ name: "Shiba Inu",				setting: "krypto-prefs-shib",	symbol: "SHIB"},
+	{ name: "Sifchain", 				setting: "krypto-prefs-erowan", 	symbol: "EROWAN"},
 	{ name: "Solana", 					setting: "krypto-prefs-sol", 	symbol: "SOL"},
 	{ name: "Stellar", 					setting: "krypto-prefs-xlm", 	symbol: "XLM"},
 	{ name: "Stratis", 					setting: "krypto-prefs-strat", 	symbol: "STRAT"},
@@ -71,7 +73,8 @@ var CRYPTOCURRENCIES = [
 	{ name: "VeChainThor",				setting: "krypto-prefs-vtho",	symbol: "VTHO"},
 	{ name: "WOO",						setting: "krypto-prefs-woo",	symbol: "WOO"},
 	{ name: "yearn.finance", 			setting: "krypto-prefs-yfi", 	symbol: "YFI"},
-	{ name: "Zcash", 					setting: "krypto-prefs-zec", 	symbol: "ZEC"}
+	{ name: "Zcash", 					setting: "krypto-prefs-zec", 	symbol: "ZEC"},
+	{ name: "Zilliqa", 					setting: "krypto-prefs-zil", 	symbol: "ZIL"}
 ];
 
 var FIAT = [
