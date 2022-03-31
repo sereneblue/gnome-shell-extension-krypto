@@ -1,6 +1,6 @@
 # krypto
 
-![krypto version](https://img.shields.io/badge/version-17-brightgreen.svg)
+![krypto version](https://img.shields.io/badge/version-18-brightgreen.svg)
 ![GPL v3 License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)
 
 <p align="center">
