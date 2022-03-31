@@ -162,6 +162,14 @@
          <default>false</default>
          <summary>Enable Decred in top bar</summary>
       </key>
+      <key name="krypto-prefs-jewel" type="b">
+         <default>false</default>
+         <summary>Enable DeFi Kingdoms</summary>
+      </key>
+      <key name="krypto-prefs-jewel-topbar" type="b">
+         <default>false</default>
+         <summary>Enable DeFi Kingdoms in top bar</summary>
+      </key>
       <key name="krypto-prefs-doge" type="b">
          <default>false</default>
          <summary>Enable Dogecoin</summary>
@@ -426,6 +434,14 @@
          <default>false</default>
          <summary>Enable Solana in top bar</summary>
       </key>
+      <key name="krypto-prefs-erowan" type="b">
+         <default>false</default>
+         <summary>Enable Sifchain</summary>
+      </key>
+      <key name="krypto-prefs-erowan-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Sifchain in top bar</summary>
+      </key>
       <key name="krypto-prefs-xlm" type="b">
          <default>false</default>
          <summary>Enable Stellar</summary>
@@ -537,6 +553,14 @@
       <key name="krypto-prefs-zec-topbar" type="b">
          <default>false</default>
          <summary>Enable Zcash in top bar</summary>
+      </key>
+      <key name="krypto-prefs-zil" type="b">
+         <default>false</default>
+         <summary>Enable Zilliqa</summary>
+      </key>
+      <key name="krypto-prefs-zil-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Zilliqa in top bar</summary>
       </key>
    </schema>
 </schemalist>
