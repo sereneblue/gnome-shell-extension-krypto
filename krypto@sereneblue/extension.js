@@ -217,7 +217,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             return null;
         }
 
-        stop() {
+        destroy() {
             if (_httpSession !== undefined)
                 _httpSession.abort();
                 _httpSession = undefined;
@@ -228,6 +228,13 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
 
                 this.menu.removeAll();
             }
+
+            if (this._distraction_timeout) {
+                Mainloop.source_remove(this._distraction_timeout);
+                this._distraction_timeout = undefined;                
+            }
+
+            super.destroy();
         }
     })
 
@@ -239,6 +246,6 @@ function enable() {
 }
 
 function disable() {
-    ticker.stop();
     ticker.destroy();
+    ticker = null;
 }
