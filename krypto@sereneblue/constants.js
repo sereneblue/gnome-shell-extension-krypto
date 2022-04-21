@@ -64,6 +64,7 @@ var CRYPTOCURRENCIES = [
 	{ name: "Stratis", 					setting: "krypto-prefs-strat", 	symbol: "STRAT"},
 	{ name: "SushiSwap", 				setting: "krypto-prefs-sushi", 	symbol: "SUSHI"},
 	{ name: "Terra", 					setting: "krypto-prefs-luna", 	symbol: "LUNA"},
+	{ name: "Tether", 					setting: "krypto-prefs-usdt", 	symbol: "USDT"},
 	{ name: "Tezos", 					setting: "krypto-prefs-xtz", 	symbol: "XTZ"},
 	{ name: "THETA", 					setting: "krypto-prefs-theta", 	symbol: "THETA"},
 	{ name: "Trader Joe",				setting: "krypto-prefs-joe",	symbol: "JOE"},

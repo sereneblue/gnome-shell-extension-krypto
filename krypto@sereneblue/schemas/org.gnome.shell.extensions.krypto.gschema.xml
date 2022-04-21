@@ -474,6 +474,14 @@
          <default>false</default>
          <summary>Enable Terra in top bar</summary>
       </key>
+      <key name="krypto-prefs-usdt" type="b">
+         <default>false</default>
+         <summary>Enable Tether</summary>
+      </key>
+      <key name="krypto-prefs-usdt-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Tether in top bar</summary>
+      </key>
       <key name="krypto-prefs-xtz" type="b">
          <default>false</default>
          <summary>Enable Tezos</summary>
