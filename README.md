@@ -41,7 +41,7 @@ krypto can be configured from the Extensions app.
 
 #### Cryptocurrencies
 
-There are 67 supported cryptocurrencies:
+There are 68 supported cryptocurrencies:
 
 	0x
 	Aave
@@ -99,6 +99,7 @@ There are 67 supported cryptocurrencies:
 	Stratis
 	SushiSwap
 	Terra
+	Tether
 	Tezos
 	THETA
 	Trader Joe
