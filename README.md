@@ -47,6 +47,7 @@ There are 68 supported cryptocurrencies:
 	Aave
 	Akash Network
 	Augur
+	Arpa
 	Avalanche
 	Axie Infinity Shards
 	Basic Attention Token
@@ -89,6 +90,7 @@ There are 68 supported cryptocurrencies:
 	Polygon
 	Polkadot
 	Ripple
+	Rose
 	Saito
 	Secret
 	Sentinel

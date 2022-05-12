@@ -58,6 +58,14 @@
          <default>false</default>
          <summary>Enable Augur in top bar</summary>
       </key>
+      <key name="krypto-prefs-arpa" type="b">
+         <default>false</default>
+         <summary>Enable Arpa</summary>
+        </key>
+      <key name="krypto-prefs-arpa-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Arpa in top bar</summary>
+      </key>
       <key name="krypto-prefs-avax" type="b">
          <default>false</default>
          <summary>Enable Avalanche</summary>
@@ -393,6 +401,14 @@
       <key name="krypto-prefs-xrp-topbar" type="b">
          <default>false</default>
          <summary>Enable Ripple in top bar</summary>
+      </key>
+      <key name="krypto-prefs-rose" type="b">
+         <default>false</default>
+         <summary>Enable Rose</summary>
+      </key>
+      <key name="krypto-prefs-rose-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Rose in top bar</summary>
       </key>
       <key name="krypto-prefs-saito" type="b">
          <default>false</default>
