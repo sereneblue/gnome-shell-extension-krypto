@@ -41,7 +41,7 @@ krypto can be configured from the Extensions app.
 
 #### Cryptocurrencies
 
-There are 68 supported cryptocurrencies:
+There are 70 supported cryptocurrencies:
 
 	0x
 	Aave
