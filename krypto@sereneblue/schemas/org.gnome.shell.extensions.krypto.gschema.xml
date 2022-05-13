@@ -2,7 +2,7 @@
 <schemalist>
    <schema id="org.gnome.shell.extensions.krypto" path="/org/gnome/shell/extensions/krypto/">
       <key name="krypto-prefs-fiat-index" type="i">
-         <default>16</default>
+         <default>17</default>
          <summary>Base fiat currency index</summary>
          <description>Fiat currency index to be used with krypto</description>
       </key>
