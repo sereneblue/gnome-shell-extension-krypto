@@ -12,6 +12,7 @@ var CRYPTOCURRENCIES = [
 	{ name: "Aave", 					setting: "krypto-prefs-aave", 	symbol: "AAVE"},
 	{ name: "Akash Network",			setting: "krypto-prefs-akt",	symbol: "AKT" },
 	{ name: "Augur", 					setting: "krypto-prefs-rep", 	symbol: "REP"},
+	{ name: "Arpa",                     setting: "krypto-prefs-arpa",   symbol: "ARPA"},
 	{ name: "Avalanche",				setting: "krypto-prefs-avax",	symbol: "AVAX"},
 	{ name: "Axie Infinity Shards",		setting: "krypto-prefs-axs",	symbol: "AXS"},
 	{ name: "Basic Attention Token", 	setting: "krypto-prefs-bat", 	symbol: "BAT"},
@@ -54,6 +55,7 @@ var CRYPTOCURRENCIES = [
 	{ name: "Polygon",					setting: "krypto-prefs-matic",	symbol: "MATIC" },
 	{ name: "Polkadot", 				setting: "krypto-prefs-dot", 	symbol: "DOT"},
 	{ name: "Ripple", 					setting: "krypto-prefs-xrp", 	symbol: "XRP"},
+	{ name: "Rose", 		            setting: "krypto-prefs-rose",   symbol: "ROSE"},
 	{ name: "Saito",					setting: "krypto-prefs-saito",	symbol: "SAITO"},
 	{ name: "Secret",					setting: "krypto-prefs-scrt",	symbol: "SCRT" },
 	{ name: "Sentinel",					setting: "krypto-prefs-dvpn",	symbol: "DVPN" },
@@ -95,6 +97,7 @@ var FIAT = [
 	{ abbr: "RUB", symbol: "₽" },
 	{ abbr: "SEK", symbol: "kr" },
 	{ abbr: "SGD", symbol: "S$" },
+	{ abbr: "TRY", symbol: "₺" },
 	{ abbr: "USD", symbol: "$" },
 	{ abbr: "ZAR", symbol: "R"}
 ];
