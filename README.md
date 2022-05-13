@@ -115,7 +115,7 @@ There are 70 supported cryptocurrencies:
 	Zilliqa
 
 #### Fiat Currencies
-There are currently 18 supported fiat currencies. If you'd like a specific currency added, please submit an issue or feel free to submit a merge request.
+There are currently 19 supported fiat currencies. If you'd like a specific currency added, please submit an issue or feel free to submit a merge request.
 
 #### Distraction Free Mode
 It's probably not healthy to have cryptocurrency prices in front of you 24/7. Distraction Free Mode will prevent krypto from displaying prices for a certain amount of time that you specify. Default value is 10 minutes. Prices will continue to be updated in the background and you still have access to the calculator. ;)
