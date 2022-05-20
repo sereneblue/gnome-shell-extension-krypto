@@ -11,7 +11,6 @@ const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
 const Settings = Me.imports.constants;
 
-let _httpSession;
 const krypto = GObject.registerClass({ GTypeName: 'krypto'},
     class krypto extends PanelMenu.Button {
         _init () {
@@ -20,6 +19,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             this._txt_label = "Loading...";
             this._settings = ExtensionUtils.getSettings('org.gnome.shell.extensions.krypto');
             this._currency_data = {};
+            this._httpSession = null;
 
             this.buttonText = new St.Label({
               text: this._txt_label,
@@ -134,8 +134,8 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             if (url) {
                 let message = Soup.Message.new('GET', url);
                 
-                _httpSession = new Soup.SessionAsync();
-                _httpSession.queue_message(message, (_httpSession, message) => {
+                this._httpSession = new Soup.SessionAsync();
+                this._httpSession.queue_message(message, (_httpSession, message) => {
                     if (message.status_code !== 200) return;
                     let json = JSON.parse(message.response_body.data);
                     this._refreshUI(json);
@@ -218,9 +218,9 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
         }
 
         destroy() {
-            if (_httpSession !== undefined)
-                _httpSession.abort();
-                _httpSession = undefined;
+            if (this._httpSession !== undefined)
+                this._httpSession.abort();
+                this._httpSession = undefined;
 
             if (this._timeout) {
                 Mainloop.source_remove(this._timeout);
