@@ -1,4 +1,5 @@
 const Main = imports.ui.main;
+const GLib = imports.gi.GLib;
 const GObject = imports.gi.GObject;
 const Soup = imports.gi.Soup;
 const St = imports.gi.St;
@@ -6,6 +7,10 @@ const Mainloop = imports.mainloop;
 const Clutter = imports.gi.Clutter;
 const PanelMenu = imports.ui.panelMenu;
 const PopupMenu = imports.ui.popupMenu;
+
+const Config = imports.misc.config;
+const [major] = Config.PACKAGE_VERSION.split('.');
+const SHELL_VER = Number.parseInt(major);
 
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
@@ -19,7 +24,11 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             this._txt_label = "Loading...";
             this._settings = ExtensionUtils.getSettings('org.gnome.shell.extensions.krypto');
             this._currency_data = {};
-            this._httpSession = null;
+            this._httpSession = new Soup.Session();
+
+            if (SHELL_VER >= 43) {
+                this._decoder = new TextDecoder();
+            }
 
             this.buttonText = new St.Label({
               text: this._txt_label,
@@ -134,12 +143,23 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             if (url) {
                 let message = Soup.Message.new('GET', url);
                 
-                this._httpSession = new Soup.SessionAsync();
-                this._httpSession.queue_message(message, (_httpSession, message) => {
-                    if (message.status_code !== 200) return;
-                    let json = JSON.parse(message.response_body.data);
-                    this._refreshUI(json);
-                });
+                if (SHELL_VER <= 42) {
+                    this._httpSession.queue_message(message, (session, msg) => {
+                        if (msg.status_code !== 200) return;
+                        let json = JSON.parse(msg.response_body.data);
+                        this._refreshUI(json);
+                    });
+                } else {
+                    this._httpSession.send_and_read_async(message, GLib.PRIORITY_DEFAULT, null, function (session, res) {
+                        let data = session.send_and_read_finish(res);
+
+                        if (data) {
+                            data = this._decoder.decode(data.toArray())
+
+                            this._refreshUI(JSON.parse(data));
+                        }
+                    }.bind(this));
+                }
             } else {
                 this._txt_label = "";
                 this._setLabelText();
