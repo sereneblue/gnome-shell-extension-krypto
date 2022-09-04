@@ -115,22 +115,19 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
 
                 if (wasEnabled) {
                     this._enabledList.append(row);
+
+                    let activeTotal = [
+                        ...this._enabledList
+                    ].filter(r => r.topBarEnabled).length;
+                    let maxActive = this._settings.get_int(Settings.PREF_NUM_DISPLAY)
+
+                    if (activeTotal < maxActive) {
+                        row.topBarEnabled = true;
+                    }
                 } else {
                     this._cryptoList.append(row);
+                    row.topBarEnabled = false;
                 }
-            }
-
-            if (wasEnabled) {
-                let activeTotal = [
-                    ...this._enabledList
-                ].filter(r => r.topBarEnabled).length;
-                let maxActive = this._settings.get_int(Settings.PREF_NUM_DISPLAY)
-
-                if (activeTotal < maxActive) {
-                    row.topBarEnabled = true;
-                }
-            } else {
-                row.topBarEnabled = false;
             }
 
             this._updateCheckboxes(wasEnabled)
