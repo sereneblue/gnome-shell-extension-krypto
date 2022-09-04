@@ -3,6 +3,6 @@
 	"description": "Cryptocurrency utility",
 	"url": "https://github.com/sereneblue/gnome-shell-extension-krypto",
 	"uuid": "krypto@sereneblue",
-	"version": 21,
-	"shell-version": [ "40", "41", "42" ]
+	"version": 22,
+	"shell-version": [ "40", "41", "42", "43" ]
 }
