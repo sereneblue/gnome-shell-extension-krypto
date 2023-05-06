@@ -354,6 +354,22 @@
          <default>false</default>
          <summary>Enable Nxt in top bar</summary>
       </key>
+      <key name="krypto-prefs-ont" type="b">
+         <default>false</default>
+         <summary>Enable Ontology</summary>
+      </key>
+      <key name="krypto-prefs-ont-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Ontology in top bar</summary>
+      </key>
+      <key name="krypto-prefs-ong" type="b">
+         <default>false</default>
+         <summary>Enable Ontology Gas</summary>
+      </key>
+      <key name="krypto-prefs-ong-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Ontology Gas in top bar</summary>
+      </key>
       <key name="krypto-prefs-osmo" type="b">
          <default>false</default>
          <summary>Enable Osmosis</summary>
@@ -553,6 +569,14 @@
       <key name="krypto-prefs-vtho-topbar" type="b">
          <default>false</default>
          <summary>Enable VeChainThor in top bar</summary>
+      </key>
+      <key name="krypto-prefs-wing" type="b">
+         <default>false</default>
+         <summary>Enable Wing Finance</summary>
+      </key>
+      <key name="krypto-prefs-wing-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Wing Finance in top bar</summary>
       </key>
       <key name="krypto-prefs-woo" type="b">
          <default>false</default>
