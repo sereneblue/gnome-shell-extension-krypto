@@ -4,6 +4,7 @@ var PREF_UPDATE_SEC = "krypto-prefs-update";
 var PREF_DISTRACTION_MIN = "krypto-prefs-distraction";
 var PREF_NUM_DISPLAY = "krypto-prefs-num";
 var PREF_DELIMITER = "krypto-prefs-delim";
+var PREF_POSITION = "krypto-prefs-pos";
 
 var DELIMS = ["|", "·", "•", "◈", "~"];
 
