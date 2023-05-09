@@ -6,6 +6,11 @@
          <summary>Base fiat currency index</summary>
          <description>Fiat currency index to be used with krypto</description>
       </key>
+      <key type="i" name="krypto-prefs-pos">
+	<default>3</default>
+	<summary>Position in panel</summary>
+	<description>Position in Panel</description>
+      </key>
       <key name="krypto-prefs-update" type="i">
          <default>30</default>
          <summary>Number of seconds to wait in between updates</summary>

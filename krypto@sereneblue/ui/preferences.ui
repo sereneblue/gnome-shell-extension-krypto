@@ -163,6 +163,33 @@
                     </layout>
                   </object>
                 </child>
+		<child>
+                  <object class="GtkLabel" id="prefs_label_pos">
+                    <property name="label">Position In Panel</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">5</property>
+                    </layout>
+                  </object>
+                </child>
+		<child>
+                  <object class="GtkComboBoxText" id="prefs_combo_pos">
+                    <property name="can_focus">0</property>
+                    <property name="margin-end">5</property>
+                    <property name="active">0</property>
+                    <items>
+                      <item translatable="yes">Far Left</item>
+                      <item translatable="yes">Left</item>
+                      <item translatable="yes">Center</item>
+                      <item translatable="yes">Right</item>
+                      <item translatable="yes">Far Right</item>
+                    </items>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="row">5</property>
+                    </layout>
+                  </object>
+                </child>
               </object>
             </property>
           </object>

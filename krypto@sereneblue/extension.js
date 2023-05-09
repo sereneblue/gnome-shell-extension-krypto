@@ -37,12 +37,15 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             this.add_child(this.buttonText);
             this._createMenu();
             this._refresh();
+
+	    this._pos_changed = this._settings.connect('changed::'+Settings.PREF_POSITION, this._positionInPanelChanged.bind(this));
+
         }
         _calculatePrice() {
             // use regex to get user input
             let text = this._calculator_input.get_text();
             let res = text.match(/[0-9]*\.?[0-9]+\s*[a-zA-Z]{3,5}/i);
-            
+
             if (res) {
                 let num = res[0].match(/[0-9]*\.?[0-9]+/)[0];
                 let currency = res[0].match(/[a-zA-Z]{3,5}/)[0].toUpperCase();
@@ -142,7 +145,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
 
             if (url) {
                 let message = Soup.Message.new('GET', url);
-                
+
                 if (SHELL_VER <= 42) {
                     this._httpSession.queue_message(message, (session, msg) => {
                         if (msg.status_code !== 200) return;
@@ -167,7 +170,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
         }
 
         _refreshUI(data) {
-            let delim_count = 0; 
+            let delim_count = 0;
             let txt_label = "";
             let keys = Object.keys(data);
 
@@ -194,7 +197,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
                       delim_count++;
                     } else {
                       let txt = `${keys[i]} ${this._getSymbol()}${data[keys[i]][this._getFiatAAbbr()]}`;
-                      this._prices_menu.menu.addMenuItem(new PopupMenu.PopupMenuItem(txt, {reactive: false}));
+			this._prices_menu.menu.addMenuItem(new PopupMenu.PopupMenuItem(txt, {reactive: false}));
                     }
                 }
 
@@ -237,6 +240,56 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             return null;
         }
 
+	_positionInPanel() {
+            let alignment = '';
+	    let gravity = 0;
+	    let arrow_pos = 0;
+
+	    switch (this._settings.get_int(Settings.PREF_POSITION)) {
+	    case 0: // far left
+		alignment = 'left';
+		gravity = 0;
+		arrow_pos = 1;
+		break;
+	    case 1: // left
+		alignment = 'left';
+		gravity = -1;
+		arrow_pos = 1;
+		break;
+	    case 2: // center
+		alignment = 'center';
+		gravity = -1;
+		arrow_pos = 0.5;
+		break;
+	    case 3: // right
+		alignment = 'right';
+		gravity = 0;
+		arrow_pos = 0;
+		break;
+	    case 4: // far right
+		alignment = 'right';
+		gravity = -1;
+		arrow_pos = 0;
+		break;
+	    }
+
+            this.menu._arrowAlignment = arrow_pos;
+
+            return [alignment, gravity];
+	}
+
+	_positionInPanelChanged()
+	{
+	    this.container.get_parent().remove_actor(this.container);
+	    let position = this._positionInPanel();
+	    let boxes = {
+		left: Main.panel._leftBox,
+		center: Main.panel._centerBox,
+		right: Main.panel._rightBox
+	    };
+	    boxes[position[0]].insert_child_at_index(this.container, position[1]);
+	}
+
         destroy() {
             if (this._httpSession !== undefined)
                 this._httpSession.abort();
@@ -251,8 +304,10 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
 
             if (this._distraction_timeout) {
                 Mainloop.source_remove(this._distraction_timeout);
-                this._distraction_timeout = undefined;                
+                this._distraction_timeout = undefined;
             }
+
+            this._settings.disconnect(this._pos_changed);
 
             super.destroy();
         }
@@ -262,7 +317,8 @@ let ticker;
 
 function enable() {
     ticker = new krypto;
-    Main.panel.addToStatusArea('krypto', ticker);
+    let position = ticker._positionInPanel();
+    Main.panel.addToStatusArea('krypto', ticker, position[1], position[0]);
 }
 
 function disable() {

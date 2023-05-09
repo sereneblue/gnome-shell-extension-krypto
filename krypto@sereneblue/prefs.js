@@ -47,7 +47,7 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
 
                 for (let i = 0; i < Settings.CRYPTOCURRENCIES.length; i++) {
                     this._addCryptoRow(
-                        Settings.CRYPTOCURRENCIES[i], 
+                        Settings.CRYPTOCURRENCIES[i],
                         this._settings
                     );
                 }
@@ -58,6 +58,7 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
 
                 let prefs_combo_fiat = builder.get_object("prefs_combo_fiat");
                 let prefs_combo_delim = builder.get_object("prefs_combo_delim");
+		let prefs_combo_pos = builder.get_object("prefs_combo_pos");
                 let prefs_spin_update = builder.get_object("prefs_spin_update");
                 let prefs_spin_distraction = builder.get_object("prefs_spin_distraction");
                 let prefs_spin_num = builder.get_object("prefs_spin_num");
@@ -74,6 +75,7 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
                 this._settings.bind(Settings.PREF_DISTRACTION_MIN, prefs_spin_distraction, "value", Gio.SettingsBindFlags.DEFAULT);
                 this._settings.bind(Settings.PREF_NUM_DISPLAY, prefs_spin_num, "value", Gio.SettingsBindFlags.DEFAULT);
                 this._settings.bind(Settings.PREF_DELIMITER, prefs_combo_delim, "active", Gio.SettingsBindFlags.DEFAULT);
+                this._settings.bind(Settings.PREF_POSITION, prefs_combo_pos, "active", Gio.SettingsBindFlags.DEFAULT);
             }
         }
 
@@ -181,7 +183,7 @@ const krypto_widget = GObject.registerClass({ GTypeName: 'kryptoSettingsWidget' 
                 this._updateCheckboxes(true, val);
             } else if (val > activeList.length) {
                 let diff = val - activeList.length;
-                
+
                 this._updateCheckboxes(false, val);
             }
         }
@@ -208,7 +210,7 @@ const CryptoCurrencyRow = GObject.registerClass({
 
         this._currencyLabel.label = this._cryptocurrency.name;
         this._currencySwitch.connect("notify::active", this._on_cryptoSwitch_changed.bind(this));
-        
+
         this._currencyEnabledInTopBar.set_visible(this._settings.get_boolean(this._cryptocurrency.setting));
         this._currencyEnabledInTopBar.connect("toggled", this._on_currencyEnabledInTopBar_changed.bind(this));
 
@@ -234,7 +236,7 @@ const CryptoCurrencyRow = GObject.registerClass({
 
     _on_currencyEnabledInTopBar_changed(state) {
         let enabled = state.get_active();
-        
+
         this._checkboxCallback(enabled);
     }
 
