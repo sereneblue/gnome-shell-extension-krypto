@@ -5,7 +5,7 @@
 
 .calculator-input {
     font-size: 16px;
-    width: 225px;
+    width: 175px;
 }
 
 .display-text {
@@ -13,4 +13,21 @@
 	font-weight: bold;
 	width: 225px;
 	text-align: center;
+}
+
+.prefs-button {
+    -st-icon-style: symbolic;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 10px;
+    min-width: 18px;
+    min-height: 18px;
+}
+
+.prefs-button:hover, .prefs-button:focus {
+    border-color: #777;
+}
+
+.prefs-button > StIcon {
+    icon-size: 18px;
 }
