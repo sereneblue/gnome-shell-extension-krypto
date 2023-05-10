@@ -118,6 +118,10 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             this.menu.addMenuItem(this._calculated_crypto);
             this.menu.addMenuItem(this._calculator_fiat);
             this.menu.addMenuItem(this._calculator_area);
+
+	    this.menu.connect('open-state-changed', (menu, open) => {
+		this._prices_menu.setSubmenuShown(open);
+	    });
         }
         _disableDistractionFreeMode() {
             this._distraction_mode_switch.actor.reactive = true;
