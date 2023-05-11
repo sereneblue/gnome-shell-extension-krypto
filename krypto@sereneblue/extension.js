@@ -87,8 +87,19 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
                 styleClass: 'calculator-input'
             });
 
+	    this._prefs_button = new St.Button({
+		style_class: 'button prefs-button'
+            });
+	    this._prefs_button.child = new St.Icon({
+		icon_name: 'preferences-system-symbolic'
+            });
+
             this._distraction_mode_switch.connect('activate', this._enableDistractionFreeMode.bind(this));
             this._calculator_input.clutter_text.connect('key-release-event', this._calculatePrice.bind(this));
+            this._prefs_button.connect('clicked', () => {
+		this.menu._getTopMenu().close();
+		ExtensionUtils.openPrefs();
+            });
 
             // add the st widgets to menu items
             // price calculator separator
@@ -99,6 +110,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             this._calculated_crypto.actor.add_child(this._crypto_amount);
             this._calculator_fiat.actor.add_child(this._calculated_price);
             this._calculator_area.actor.add_child(this._calculator_input);
+	    this._calculator_area.actor.add_child(this._prefs_button);
 
             this.menu.addMenuItem(this._distraction_mode_switch);
             this.menu.addMenuItem(this._prices_menu);
@@ -106,6 +118,10 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             this.menu.addMenuItem(this._calculated_crypto);
             this.menu.addMenuItem(this._calculator_fiat);
             this.menu.addMenuItem(this._calculator_area);
+
+	    this.menu.connect('open-state-changed', (menu, open) => {
+		this._prices_menu.setSubmenuShown(open);
+	    });
         }
         _disableDistractionFreeMode() {
             this._distraction_mode_switch.actor.reactive = true;
