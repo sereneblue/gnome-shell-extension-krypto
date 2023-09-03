@@ -1,0 +1,8 @@
+{
+	"name": "krypto",
+	"description": "GNOME extension to display cryptocurrency prices",
+	"url": "https://github.com/sereneblue/gnome-shell-extension-krypto",
+	"uuid": "krypto@sereneblue",
+	"version": 27,
+	"shell-version": [ "45" ]
+}
