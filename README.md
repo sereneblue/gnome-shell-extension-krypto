@@ -1,6 +1,6 @@
 # krypto
 
-![krypto version](https://img.shields.io/badge/version-26-brightgreen.svg)
+![krypto version](https://img.shields.io/badge/version-27-brightgreen.svg)
 ![GPL v3 License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)
 
 <p align="center">
@@ -15,21 +15,19 @@ A cryptocurrency utility for gnome-shell.
 
 Visit [extensions.gnome.org](https://extensions.gnome.org/extension/1913/krypto/) and click on the switch to install krypto.
 
-### Using the install script
-```
-$ wget -O install.sh https://raw.githubusercontent.com/sereneblue/gnome-shell-extension-krypto/master/install.sh
-$ chmod +x install.sh
-$ ./install.sh
-```
-
 ### From source code
 ```
 $ git clone https://github.com/sereneblue/gnome-shell-extension-krypto.git
 $ cd gnome-shell-extension-krypto
-$ mv krypto@sereneblue $HOME/.local/share/gnome-shell/extensions/krypto@sereneblue
+# GNOME 45:
+$ ./build.sh 45
+# GNOME 44 and older:
+$ ./build.sh
+$ mkdir -p $HOME/.local/share/gnome-shell/extensions/krypto@sereneblue
+$ unzip *.zip -d $HOME/.local/share/gnome-shell/extensions/krypto@sereneblue
 ```
 
-If you're using Wayland, you'll need to logout to see the changes.
+If you're using Wayland, you'll need to logout/login to see the changes.
 
 # Configuration
 
