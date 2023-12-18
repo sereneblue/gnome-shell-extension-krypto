@@ -255,6 +255,14 @@
          <default>false</default>
          <summary>Enable Harmony in top bar</summary>
       </key>
+      <key name="krypto-prefs-icp" type="b">
+         <default>false</default>
+         <summary>Enable Internet Computer</summary>
+      </key>
+      <key name="krypto-prefs-icp-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Internet Computer in top bar</summary>
+      </key>
       <key name="krypto-prefs-iota" type="b">
          <default>false</default>
          <summary>Enable IOTA</summary>
@@ -399,6 +407,14 @@
          <default>false</default>
          <summary>Enable Persistence in top bar</summary>
       </key>
+      <key name="krypto-prefs-plu" type="b">
+         <default>false</default>
+         <summary>Enable Pluton</summary>
+      </key>
+      <key name="krypto-prefs-plu-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Pluton in top bar</summary>
+      </key>
       <key name="krypto-prefs-matic" type="b">
          <default>false</default>
          <summary>Enable Polygon</summary>
@@ -534,6 +550,14 @@
       <key name="krypto-prefs-theta-topbar" type="b">
          <default>false</default>
          <summary>Enable THETA in top bar</summary>
+      </key>
+      <key name="krypto-prefs-ton" type="b">
+         <default>false</default>
+         <summary>Enable Toncoin</summary>
+      </key>
+      <key name="krypto-prefs-ton-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Toncoin in top bar</summary>
       </key>
       <key name="krypto-prefs-joe" type="b">
          <default>false</default>
