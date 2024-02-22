@@ -4,5 +4,5 @@
 	"url": "https://github.com/sereneblue/gnome-shell-extension-krypto",
 	"uuid": "krypto@sereneblue",
 	"version": 29,
-	"shell-version": [ "45" ]
+	"shell-version": [ "45", "46" ]
 }
