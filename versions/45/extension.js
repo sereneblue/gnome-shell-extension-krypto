@@ -10,6 +10,7 @@ import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
+import {extensionManager} from 'resource:///org/gnome/shell/ui/main.js';
 
 const krypto = GObject.registerClass({ GTypeName: 'krypto'},
     class krypto extends PanelMenu.Button {
@@ -94,7 +95,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             this._calculator_input.clutter_text.connect('key-release-event', this._calculatePrice.bind(this));
             this._prefs_button.connect('clicked', () => {
                 this.menu._getTopMenu().close();
-                ExtensionUtils.openPrefs();
+                extensionManager.openExtensionPrefs('krypto@sereneblue', '', {})
             });
 
             // add the st widgets to menu items
