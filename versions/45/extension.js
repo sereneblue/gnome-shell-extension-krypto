@@ -10,11 +10,10 @@ import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
-import {extensionManager} from 'resource:///org/gnome/shell/ui/main.js';
 
 const krypto = GObject.registerClass({ GTypeName: 'krypto'},
     class krypto extends PanelMenu.Button {
-        _init () {
+        _init (ctx) {
             super._init(0.0, "krypto", false);
             this._base_url = "https://min-api.cryptocompare.com/data/pricemulti?fsyms="
             this._txt_label = "Loading...";
@@ -27,7 +26,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
                 y_align: Clutter.ActorAlign.CENTER
             });
             this.add_child(this.buttonText);
-            this._createMenu();
+            this._createMenu(ctx);
         }
 
         _setSettings(settings) {
@@ -55,7 +54,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             this._crypto_amount.set_text("");
         }
 
-        _createMenu() {
+        _createMenu(ctx) {
             this._distraction_mode_switch = new PopupMenu.PopupSwitchMenuItem('Distraction Free Mode:', false);
             this._prices_menu = new PopupMenu.PopupSubMenuMenuItem('More Prices');
 
@@ -95,7 +94,7 @@ const krypto = GObject.registerClass({ GTypeName: 'krypto'},
             this._calculator_input.clutter_text.connect('key-release-event', this._calculatePrice.bind(this));
             this._prefs_button.connect('clicked', () => {
                 this.menu._getTopMenu().close();
-                extensionManager.openExtensionPrefs('krypto@sereneblue', '', {})
+                ctx.openPreferences();
             });
 
             // add the st widgets to menu items
@@ -331,7 +330,7 @@ export default class KryptoExtension extends Extension {
     init() {}
 
     enable() {
-        this.ticker = new krypto;
+        this.ticker = new krypto(this);
         this.ticker._setSettings(this.getSettings("org.gnome.shell.extensions.krypto"))
         this.ticker._refresh();
 
