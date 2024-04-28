@@ -74,7 +74,7 @@ var CRYPTOCURRENCIES = [
 	{ name: "Tether", 					setting: "krypto-prefs-usdt", 	symbol: "USDT"},
 	{ name: "Tezos", 					setting: "krypto-prefs-xtz", 	symbol: "XTZ"},
 	{ name: "THETA", 					setting: "krypto-prefs-theta", 	symbol: "THETA"},
-	{ name: "Toncoin", 					setting: "krypto-prefs-ton", 	symbol: "TON"},
+	{ name: "Toncoin", 					setting: "krypto-prefs-ton", 	symbol: "TONCOIN"},
 	{ name: "Trader Joe",				setting: "krypto-prefs-joe",	symbol: "JOE"},
 	{ name: "TRON", 					setting: "krypto-prefs-trx", 	symbol: "TRX"},
 	{ name: "Uniswap", 					setting: "krypto-prefs-uni", 	symbol: "UNI"},
