@@ -3,6 +3,6 @@
 	"description": "GNOME extension to display cryptocurrency prices",
 	"url": "https://github.com/sereneblue/gnome-shell-extension-krypto",
 	"uuid": "krypto@sereneblue",
-	"version": 34,
+	"version": 35,
 	"shell-version": [ "45", "46", "47" ]
 }
