@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <schemalist>
-   <schema id="org.gnome.shell.extensions.krypto" path="/org/gnome/shell/extensions/krypto/">
+   <schema
+        id="org.gnome.shell.extensions.krypto"
+        path="/org/gnome/shell/extensions/krypto/"
+    >
       <key name="krypto-prefs-fiat-index" type="i">
          <default>17</default>
          <summary>Base fiat currency index</summary>
@@ -14,17 +17,20 @@
       <key name="krypto-prefs-update" type="i">
          <default>30</default>
          <summary>Number of seconds to wait in between updates</summary>
-         <description>Number of seconds to wait in between updates when checking cryptocompare</description>
+         <description
+            >Number of seconds to wait in between updates when checking cryptocompare</description>
       </key>
       <key name="krypto-prefs-distraction" type="i">
          <default>10</default>
          <summary>Number of minutes for distraction free time</summary>
-         <description>Number of minutes for a distraction free period</description>
+         <description
+            >Number of minutes for a distraction free period</description>
       </key>
       <key name="krypto-prefs-num" type="i">
          <default>2</default>
          <summary>Number of currencies to display in the Top Bar</summary>
-         <description>Number of currencies to display in the Top Bar</description>
+         <description
+            >Number of currencies to display in the Top Bar</description>
       </key>
       <key name="krypto-prefs-delim" type="i">
          <default>4</default>
@@ -94,6 +100,14 @@
       <key name="krypto-prefs-bat-topbar" type="b">
          <default>false</default>
          <summary>Enable Basic Attention Token in top bar</summary>
+      </key>
+      <key name="krypto-prefs-bgb" type="b">
+         <default>true</default>
+         <summary>Enable Bitget Token</summary>
+      </key>
+      <key name="krypto-prefs-bgb-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Bitget Token in top bar</summary>
       </key>
       <key name="krypto-prefs-bnb" type="b">
          <default>false</default>
@@ -254,6 +268,22 @@
       <key name="krypto-prefs-one-topbar" type="b">
          <default>false</default>
          <summary>Enable Harmony in top bar</summary>
+      </key>
+      <key name="krypto-prefs-hbar" type="b">
+         <default>false</default>
+         <summary>Enable Hedera</summary>
+      </key>
+      <key name="krypto-prefs-hbar-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Hedera in top bar</summary>
+      </key>
+      <key name="krypto-prefs-hype" type="b">
+         <default>false</default>
+         <summary>Enable Hyperliquid</summary>
+      </key>
+      <key name="krypto-prefs-hype-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Hyperliquid in top bar</summary>
       </key>
       <key name="krypto-prefs-icp" type="b">
          <default>false</default>
@@ -431,14 +461,6 @@
          <default>false</default>
          <summary>Enable Polkadot in top bar</summary>
       </key>
-      <key name="krypto-prefs-xrp" type="b">
-         <default>false</default>
-         <summary>Enable Ripple</summary>
-      </key>
-      <key name="krypto-prefs-xrp-topbar" type="b">
-         <default>false</default>
-         <summary>Enable Ripple in top bar</summary>
-      </key>
       <key name="krypto-prefs-rose" type="b">
          <default>false</default>
          <summary>Enable Rose</summary>
@@ -510,6 +532,14 @@
       <key name="krypto-prefs-strat-topbar" type="b">
          <default>false</default>
          <summary>Enable Stratis in top bar</summary>
+      </key>
+      <key name="krypto-prefs-sui" type="b">
+         <default>false</default>
+         <summary>Enable Sui</summary>
+      </key>
+      <key name="krypto-prefs-sui-topbar" type="b">
+         <default>false</default>
+         <summary>Enable Sui in top bar</summary>
       </key>
       <key name="krypto-prefs-sushi" type="b">
          <default>false</default>
@@ -614,6 +644,14 @@
       <key name="krypto-prefs-woo-topbar" type="b">
          <default>false</default>
          <summary>Enable WOO in top bar</summary>
+      </key>
+      <key name="krypto-prefs-xrp" type="b">
+         <default>false</default>
+         <summary>Enable XRP</summary>
+      </key>
+      <key name="krypto-prefs-xrp-topbar" type="b">
+         <default>false</default>
+         <summary>Enable XRP in top bar</summary>
       </key>
       <key name="krypto-prefs-yfi" type="b">
          <default>false</default>
