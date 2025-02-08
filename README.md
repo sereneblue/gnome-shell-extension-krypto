@@ -1,6 +1,6 @@
 # krypto
 
-![krypto version](https://img.shields.io/badge/version-35-brightgreen.svg)
+![krypto version](https://img.shields.io/badge/version-36-brightgreen.svg)
 ![GPL v3 License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)
 
 <p align="center">
@@ -39,7 +39,7 @@ krypto can be configured from the Extensions app.
 
 #### Cryptocurrencies
 
-There are 73 supported cryptocurrencies:
+There are 77 supported cryptocurrencies:
 
 	0x
 	Aave
@@ -52,6 +52,7 @@ There are 73 supported cryptocurrencies:
 	Binance Coin
 	Bitcoin
 	Bitcoin Cash
+	Bitget Token
 	BitTorrent
 	Cardano
 	Chainlink
@@ -69,6 +70,8 @@ There are 73 supported cryptocurrencies:
 	Filecoin
 	FTX Token
 	Harmony
+	Hedera
+	Hyperliquid
 	IOTA
 	Kitty Inu
 	Klaytn
@@ -89,7 +92,6 @@ There are 73 supported cryptocurrencies:
 	Persistence
 	Polygon
 	Polkadot
-	Ripple
 	Rose
 	Saito
 	Secret
@@ -99,6 +101,7 @@ There are 73 supported cryptocurrencies:
 	Solana
 	Stellar
 	Stratis
+	Sui
 	SushiSwap
 	Terra
 	Tether
@@ -109,6 +112,7 @@ There are 73 supported cryptocurrencies:
 	Uniswap
 	VeChain
 	VeChainThor
+	XRP
 	Wing Finance
 	WOO
 	yearn.finance
