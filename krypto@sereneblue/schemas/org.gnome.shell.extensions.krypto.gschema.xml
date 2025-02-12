@@ -102,7 +102,7 @@
          <summary>Enable Basic Attention Token in top bar</summary>
       </key>
       <key name="krypto-prefs-bgb" type="b">
-         <default>true</default>
+         <default>false</default>
          <summary>Enable Bitget Token</summary>
       </key>
       <key name="krypto-prefs-bgb-topbar" type="b">
